@@ -1,0 +1,273 @@
+Ejecutando iteración con 3 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+3
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Built target get_started_with_IQS.exe
+[ 97%] Built target specv2_bench.exe
+[ 97%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 906.986 milisegundos
+Uso medio de RAM: 80.641 MB
+Iteración 3 completada.
+Ejecutando iteración con 4 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+4
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 905.580 milisegundos
+Uso medio de RAM: 80.115 MB
+Iteración 4 completada.
+Ejecutando iteración con 5 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+5
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1024.137 milisegundos
+Uso medio de RAM: 67.095 MB
+Iteración 5 completada.
+Ejecutando iteración con 6 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+6
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 905.153 milisegundos
+Uso medio de RAM: 80.451 MB
+Iteración 6 completada.
+Ejecutando iteración con 7 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+7
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1013.173 milisegundos
+Uso medio de RAM: 82.293 MB
+Iteración 7 completada.
+Ejecutando iteración con 8 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+8
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target specv2_bench.exe
+[ 85%] Built target get_started_with_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target get_started_with_noisy_IQS.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 903.915 milisegundos
+Uso medio de RAM: 78.224 MB
+Iteración 8 completada.
+Ejecutando iteración con 9 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+9
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 904.211 milisegundos
+Uso medio de RAM: 80.886 MB
+Iteración 9 completada.
+Ejecutando iteración con 10 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+10
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 97%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target specv2_bench.exe
+[ 97%] Built target get_started_with_IQS.exe
+[ 97%] Built target get_started_with_noisy_IQS.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1015.944 milisegundos
+Uso medio de RAM: 68.423 MB
+Iteración 10 completada.
+Ejecutando iteración con 11 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+11
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 85%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 85%] Built target get_started_with_noisy_IQS.exe
+[ 91%] Built target specv2_bench.exe
+[ 97%] Built target basic_code_for_scaling.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 900.524 milisegundos
+Uso medio de RAM: 81.940 MB
+Iteración 11 completada.
+Ejecutando iteración con 12 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+12
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1015.309 milisegundos
+Uso medio de RAM: 88.462 MB
+Iteración 12 completada.
+Ejecutando iteración con 13 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+13
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1014.340 milisegundos
+Uso medio de RAM: 68.789 MB
+Iteración 13 completada.
+Ejecutando iteración con 14 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+14
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target specv2_bench.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1013.670 milisegundos
+Uso medio de RAM: 69.240 MB
+Iteración 14 completada.
+Ejecutando iteración con 15 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1016.621 milisegundos
+Uso medio de RAM: 89.112 MB
+Iteración 15 completada.
+Ejecutando iteración con 16 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 97%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1016.255 milisegundos
+Uso medio de RAM: 89.201 MB
+Iteración 16 completada.
+Ejecutando iteración con 17 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1013.079 milisegundos
+Uso medio de RAM: 88.325 MB
+Iteración 17 completada.
+Ejecutando iteración con 18 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1015.936 milisegundos
+Uso medio de RAM: 89.448 MB
+Iteración 18 completada.
+Todas las iteraciones completadas exitosamente.

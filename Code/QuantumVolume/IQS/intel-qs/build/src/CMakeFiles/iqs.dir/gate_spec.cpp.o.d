@@ -1,0 +1,4 @@
+src/CMakeFiles/iqs.dir/gate_spec.cpp.o: \
+ /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/src/gate_spec.cpp \
+ /usr/include/stdc-predef.h \
+ /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/src/../include/gate_spec.hpp

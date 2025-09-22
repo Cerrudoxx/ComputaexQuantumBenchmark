@@ -1,0 +1,148 @@
+Ejecutando iteración con 3 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+3
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 904.660 milisegundos
+Uso medio de RAM: 78.911 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-02 12:07:15
+Duración de la iteración 1: 0.365078 ms
+Duración de la iteración 2: 0.013826 ms
+Duración de la iteración 3: 0.013966 ms
+Duración de la iteración 4: 0.013426 ms
+Duración de la iteración 5: 0.013775 ms
+Duración de la iteración 6: 0.013476 ms
+Duración de la iteración 7: 0.013425 ms
+Duración de la iteración 8: 0.013686 ms
+Duración de la iteración 9: 0.013725 ms
+Duración de la iteración 10: 0.013706 ms
+Tiempo de ejecución promedio inicial: 0.048808900000 ms
+Desviación estándar inicial: 0.105423168366 ms
+Optimal number of iterations: 28676
+Tiempo de ejecución promedio: 0.013 ms
+Desviación estándar del tiempo: 0.003 ms
+Uso medio de RAM: 5000.432 KB
+Pico de uso de RAM: 5136 KB
+Qubits utilizados: 3
+Iteraciones óptimas: 28676
+Iteración 3 completada.
+Ejecutando iteración con 4 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+4
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target specv2_bench.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1032.511 milisegundos
+Uso medio de RAM: 81.747 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-02 12:07:19
+Duración de la iteración 1: 0.06371 ms
+Duración de la iteración 2: 0.025268 ms
+Duración de la iteración 3: 0.025157 ms
+Duración de la iteración 4: 0.025108 ms
+Duración de la iteración 5: 0.025177 ms
+Duración de la iteración 6: 0.024496 ms
+Duración de la iteración 7: 0.024316 ms
+Duración de la iteración 8: 0.024176 ms
+Duración de la iteración 9: 0.024255 ms
+Duración de la iteración 10: 0.025358 ms
+Tiempo de ejecución promedio inicial: 0.028702100000 ms
+Desviación estándar inicial: 0.011677466159 ms
+Optimal number of iterations: 1018
+Tiempo de ejecución promedio: 0.030 ms
+Desviación estándar del tiempo: 0.008 ms
+Uso medio de RAM: 4856.000 KB
+Pico de uso de RAM: 4920 KB
+Qubits utilizados: 4
+Iteraciones óptimas: 1018
+Iteración 4 completada.
+Ejecutando iteración con 5 qubits
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/generadorCircuitoGrover.py:23: DeprecationWarning: The class ``qiskit.circuit.library.basis_change.qft.QFT`` is deprecated as of Qiskit 2.1. It will be removed in Qiskit 3.0. ('Use qiskit.circuit.library.QFTGate or qiskit.synthesis.qft.synth_qft_full instead, for access to all previous arguments.',)
+  qc = QFT(n, approximation_degree=0)
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+5
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 909.708 milisegundos
+Uso medio de RAM: 78.591 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-02 12:07:22
+Duración de la iteración 1: 0.14873 ms
+Duración de la iteración 2: 0.122842 ms
+Duración de la iteración 3: 0.082726 ms
+Duración de la iteración 4: 0.081013 ms
+Duración de la iteración 5: 0.061205 ms
+Duración de la iteración 6: 0.040096 ms
+Duración de la iteración 7: 0.039745 ms
+Duración de la iteración 8: 0.039795 ms
+Duración de la iteración 9: 0.039805 ms
+Duración de la iteración 10: 0.043673 ms
+Tiempo de ejecución promedio inicial: 0.069963000000 ms
+Desviación estándar inicial: 0.036983875762 ms
+Optimal number of iterations: 1718
+Tiempo de ejecución promedio: 0.048 ms
+Desviación estándar del tiempo: 0.011 ms
+Uso medio de RAM: 4801.333 KB
+Pico de uso de RAM: 4836 KB
+Qubits utilizados: 5
+Iteraciones óptimas: 1718
+Iteración 5 completada.
+Ejecutando iteración con 6 qubits

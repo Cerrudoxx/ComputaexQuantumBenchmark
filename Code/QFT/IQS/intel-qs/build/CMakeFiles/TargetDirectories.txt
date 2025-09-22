@@ -1,0 +1,16 @@
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/CMakeFiles/edit_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/CMakeFiles/rebuild_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/src/CMakeFiles/iqs.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/src/CMakeFiles/edit_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/src/CMakeFiles/rebuild_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/examples/CMakeFiles/circuito.exe.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/examples/CMakeFiles/edit_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/examples/CMakeFiles/rebuild_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/tutorials/CMakeFiles/get_started_with_IQS.exe.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/tutorials/CMakeFiles/get_started_with_noisy_IQS.exe.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/tutorials/CMakeFiles/edit_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/tutorials/CMakeFiles/rebuild_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/benchmarks/CMakeFiles/basic_code_for_scaling.exe.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/benchmarks/CMakeFiles/specv2_bench.exe.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/benchmarks/CMakeFiles/edit_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qft/intel-qs/build/benchmarks/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1539 @@
+Ejecutando iteración con 15 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 82%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1122.292 milisegundos
+Uso medio de RAM: 98.258 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:01
+Duración de la iteración : 92.1629 ms
+Tiempo de ejecución promedio: 92.163 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5258.800 KB
+Pico de uso de RAM: 5288 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target basic_code_for_scaling.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1127.004 milisegundos
+Uso medio de RAM: 98.377 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:08
+Duración de la iteración : 92.6534 ms
+Tiempo de ejecución promedio: 92.653 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5426.400 KB
+Pico de uso de RAM: 5456 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1123.434 milisegundos
+Uso medio de RAM: 93.580 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:14
+Duración de la iteración : 92.9603 ms
+Tiempo de ejecución promedio: 92.960 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5386.800 KB
+Pico de uso de RAM: 5416 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1127.208 milisegundos
+Uso medio de RAM: 96.632 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:20
+Duración de la iteración : 99.1554 ms
+Tiempo de ejecución promedio: 99.155 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5003.200 KB
+Pico de uso de RAM: 5016 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1131.304 milisegundos
+Uso medio de RAM: 91.050 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:26
+Duración de la iteración : 93.275 ms
+Tiempo de ejecución promedio: 93.275 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5107.200 KB
+Pico de uso de RAM: 5120 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 85%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 91%] Built target get_started_with_IQS.exe
+[ 97%] Built target specv2_bench.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1126.473 milisegundos
+Uso medio de RAM: 95.911 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:32
+Duración de la iteración : 94.0146 ms
+Tiempo de ejecución promedio: 94.015 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5124.000 KB
+Pico de uso de RAM: 5124 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target specv2_bench.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1125.952 milisegundos
+Uso medio de RAM: 98.510 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:38
+Duración de la iteración : 94.8632 ms
+Tiempo de ejecución promedio: 94.863 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5047.200 KB
+Pico de uso de RAM: 5060 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 91%] Built target basic_code_for_scaling.exe
+[ 91%] Built target specv2_bench.exe
+[ 91%] Built target get_started_with_IQS.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1124.607 milisegundos
+Uso medio de RAM: 98.198 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:44
+Duración de la iteración : 87.5383 ms
+Tiempo de ejecución promedio: 87.538 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5205.778 KB
+Pico de uso de RAM: 5224 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target basic_code_for_scaling.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1122.079 milisegundos
+Uso medio de RAM: 96.826 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:51
+Duración de la iteración : 88.7247 ms
+Tiempo de ejecución promedio: 88.725 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5255.556 KB
+Pico de uso de RAM: 5288 KB
+Qubits utilizados: 15
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+15
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1126.796 milisegundos
+Uso medio de RAM: 98.208 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:22:57
+Duración de la iteración : 103.771 ms
+Tiempo de ejecución promedio: 103.771 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5280.364 KB
+Pico de uso de RAM: 5292 KB
+Qubits utilizados: 15
+--------------------------------------------------------------------------------
+Número óptimo de iteraciones para 15 qubits: 1
+--------------------------------------------------------------------------------
+Estadísticas finales para 15 qubits:
+Resultados - Media: 0.0939118 s, Desviación estándar: 0.004703343250639203 s
+Compilación - Media: 1.1257149535000002 s, Desviación estándar: 0.0027547102467753307 s
+Combinado - Media: 1.2196267535 s, Desviación estándar: 0.006348774918388265 s
+Consumo de Memoria - Ejecución: 5.0874314453125 MB, Compilación: 0.09429199218749999 MB
+Iteración 15 completada.
+Ejecutando iteración con 16 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target specv2_bench.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1240.016 milisegundos
+Uso medio de RAM: 88.920 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:06
+Duración de la iteración : 207.07 ms
+Tiempo de ejecución promedio: 207.070 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5633.905 KB
+Pico de uso de RAM: 5640 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1233.771 milisegundos
+Uso medio de RAM: 104.260 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:13
+Duración de la iteración : 209.291 ms
+Tiempo de ejecución promedio: 209.291 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5885.905 KB
+Pico de uso de RAM: 5892 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1230.711 milisegundos
+Uso medio de RAM: 87.707 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:20
+Duración de la iteración : 210.632 ms
+Tiempo de ejecución promedio: 210.632 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5881.905 KB
+Pico de uso de RAM: 5888 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_noisy_IQS.exe
+[ 85%] Built target get_started_with_IQS.exe
+[ 82%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 91%] Built target basic_code_for_scaling.exe
+[ 97%] Built target specv2_bench.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1242.727 milisegundos
+Uso medio de RAM: 86.602 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:27
+Duración de la iteración : 212.06 ms
+Tiempo de ejecución promedio: 212.060 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5922.286 KB
+Pico de uso de RAM: 5936 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1364.554 milisegundos
+Uso medio de RAM: 88.520 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:34
+Duración de la iteración : 217.762 ms
+Tiempo de ejecución promedio: 217.762 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5946.909 KB
+Pico de uso de RAM: 5960 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 88%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1234.687 milisegundos
+Uso medio de RAM: 87.101 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:41
+Duración de la iteración : 220.01 ms
+Tiempo de ejecución promedio: 220.010 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5606.182 KB
+Pico de uso de RAM: 5612 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 91%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target specv2_bench.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1233.388 milisegundos
+Uso medio de RAM: 86.776 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:48
+Duración de la iteración : 219.255 ms
+Tiempo de ejecución promedio: 219.255 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5834.364 KB
+Pico de uso de RAM: 5848 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1238.906 milisegundos
+Uso medio de RAM: 103.821 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:23:55
+Duración de la iteración : 212.396 ms
+Tiempo de ejecución promedio: 212.396 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5761.905 KB
+Pico de uso de RAM: 5768 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1232.201 milisegundos
+Uso medio de RAM: 87.165 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:02
+Duración de la iteración : 214.415 ms
+Tiempo de ejecución promedio: 214.415 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5826.182 KB
+Pico de uso de RAM: 5832 KB
+Qubits utilizados: 16
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+16
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1235.015 milisegundos
+Uso medio de RAM: 87.274 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:09
+Duración de la iteración : 210.067 ms
+Tiempo de ejecución promedio: 210.067 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 5893.905 KB
+Pico de uso de RAM: 5900 KB
+Qubits utilizados: 16
+--------------------------------------------------------------------------------
+Número óptimo de iteraciones para 16 qubits: 9
+--------------------------------------------------------------------------------
+Estadísticas finales para 16 qubits:
+Resultados - Media: 0.21329579999999998 s, Desviación estándar: 0.004427802660462635 s
+Compilación - Media: 1.2485976543 s, Desviación estándar: 0.040914219638150826 s
+Combinado - Media: 1.4618934543 s, Desviación estándar: 0.04257511973091641 s
+Consumo de Memoria - Ejecución: 5.68295390625 MB, Compilación: 0.0886861328125 MB
+Iteración 16 completada.
+Ejecutando iteración con 17 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1234.736 milisegundos
+Uso medio de RAM: 88.216 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:18
+Duración de la iteración : 441.349 ms
+Tiempo de ejecución promedio: 441.349 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6737.091 KB
+Pico de uso de RAM: 6740 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1239.653 milisegundos
+Uso medio de RAM: 105.451 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:26
+Duración de la iteración : 478.329 ms
+Tiempo de ejecución promedio: 478.329 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6869.750 KB
+Pico de uso de RAM: 6924 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1230.213 milisegundos
+Uso medio de RAM: 91.809 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:33
+Duración de la iteración : 454.714 ms
+Tiempo de ejecución promedio: 454.714 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6669.156 KB
+Pico de uso de RAM: 6672 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1234.932 milisegundos
+Uso medio de RAM: 106.127 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:40
+Duración de la iteración : 459.684 ms
+Tiempo de ejecución promedio: 459.684 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6865.217 KB
+Pico de uso de RAM: 6868 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1244.403 milisegundos
+Uso medio de RAM: 104.490 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:48
+Duración de la iteración : 442.996 ms
+Tiempo de ejecución promedio: 442.996 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6773.091 KB
+Pico de uso de RAM: 6776 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_noisy_IQS.exe
+[ 85%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 85%] Built target specv2_bench.exe
+[ 91%] Built target basic_code_for_scaling.exe
+[ 97%] Built target get_started_with_IQS.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1235.335 milisegundos
+Uso medio de RAM: 86.966 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:24:55
+Duración de la iteración : 424.333 ms
+Tiempo de ejecución promedio: 424.333 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6784.952 KB
+Pico de uso de RAM: 6788 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1232.344 milisegundos
+Uso medio de RAM: 86.659 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:25:02
+Duración de la iteración : 466.056 ms
+Tiempo de ejecución promedio: 466.056 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 7001.565 KB
+Pico de uso de RAM: 7008 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1232.671 milisegundos
+Uso medio de RAM: 87.452 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:25:10
+Duración de la iteración : 441.006 ms
+Tiempo de ejecución promedio: 441.006 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6773.273 KB
+Pico de uso de RAM: 6780 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1125.611 milisegundos
+Uso medio de RAM: 98.737 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:25:17
+Duración de la iteración : 440.98 ms
+Tiempo de ejecución promedio: 440.980 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6725.091 KB
+Pico de uso de RAM: 6728 KB
+Qubits utilizados: 17
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+17
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1231.217 milisegundos
+Uso medio de RAM: 104.002 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:25:24
+Duración de la iteración : 457.303 ms
+Tiempo de ejecución promedio: 457.303 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 6616.000 KB
+Pico de uso de RAM: 6616 KB
+Qubits utilizados: 17
+--------------------------------------------------------------------------------
+Número óptimo de iteraciones para 17 qubits: 4
+--------------------------------------------------------------------------------
+Estadísticas finales para 17 qubits:
+Resultados - Media: 0.450675 s, Desviación estándar: 0.01552793085593398 s
+Compilación - Media: 1.224111579 s, Desviación estándar: 0.03486538097299931 s
+Combinado - Media: 1.674786579 s, Desviación estándar: 0.04110287303323406 s
+Consumo de Memoria - Ejecución: 6.6225767578125 MB, Compilación: 0.09374111328125 MB
+Iteración 17 completada.
+Ejecutando iteración con 18 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 91%] Built target basic_code_for_scaling.exe
+[ 91%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target specv2_bench.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1355.849 milisegundos
+Uso medio de RAM: 95.737 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:25:35
+Duración de la iteración : 1142.77 ms
+Tiempo de ejecución promedio: 1142.773 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8929.451 KB
+Pico de uso de RAM: 8932 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1232.830 milisegundos
+Uso medio de RAM: 105.205 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:25:44
+Duración de la iteración : 1068.07 ms
+Tiempo de ejecución promedio: 1068.069 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8702.792 KB
+Pico de uso de RAM: 8704 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1227.268 milisegundos
+Uso medio de RAM: 106.723 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:25:52
+Duración de la iteración : 1071.86 ms
+Tiempo de ejecución promedio: 1071.864 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8998.792 KB
+Pico de uso de RAM: 9000 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1229.702 milisegundos
+Uso medio de RAM: 88.597 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:26:01
+Duración de la iteración : 1068.74 ms
+Tiempo de ejecución promedio: 1068.741 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8918.792 KB
+Pico de uso de RAM: 8920 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 82%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1229.882 milisegundos
+Uso medio de RAM: 89.063 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:26:09
+Duración de la iteración : 1044.08 ms
+Tiempo de ejecución promedio: 1044.080 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8926.757 KB
+Pico de uso de RAM: 8928 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target get_started_with_noisy_IQS.exe
+[ 82%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1233.105 milisegundos
+Uso medio de RAM: 105.847 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:26:18
+Duración de la iteración : 1023.39 ms
+Tiempo de ejecución promedio: 1023.386 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 9015.485 KB
+Pico de uso de RAM: 9020 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target specv2_bench.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1229.994 milisegundos
+Uso medio de RAM: 107.435 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:26:26
+Duración de la iteración : 1056.96 ms
+Tiempo de ejecución promedio: 1056.961 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8730.248 KB
+Pico de uso de RAM: 8732 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1230.113 milisegundos
+Uso medio de RAM: 104.073 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:26:35
+Duración de la iteración : 1052.05 ms
+Tiempo de ejecución promedio: 1052.047 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8800.000 KB
+Pico de uso de RAM: 8800 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 91%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target specv2_bench.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1230.628 milisegundos
+Uso medio de RAM: 88.962 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:26:43
+Duración de la iteración : 1048.04 ms
+Tiempo de ejecución promedio: 1048.044 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 9006.769 KB
+Pico de uso de RAM: 9008 KB
+Qubits utilizados: 18
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+18
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 82%] Built target basic_code_for_scaling.exe
+[ 82%] Built target get_started_with_IQS.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 91%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target specv2_bench.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1231.169 milisegundos
+Uso medio de RAM: 108.559 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:26:51
+Duración de la iteración : 1056.68 ms
+Tiempo de ejecución promedio: 1056.684 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 8890.781 KB
+Pico de uso de RAM: 8892 KB
+Qubits utilizados: 18
+--------------------------------------------------------------------------------
+Número óptimo de iteraciones para 18 qubits: 9
+--------------------------------------------------------------------------------
+Estadísticas finales para 18 qubits:
+Resultados - Media: 1.0632648999999998 s, Desviación estándar: 0.03135371866107394 s
+Compilación - Media: 1.2430540791 s, Desviación estándar: 0.039666427189208056 s
+Combinado - Media: 2.3063189791 s, Desviación estándar: 0.06889379463432509 s
+Consumo de Memoria - Ejecución: 8.68358076171875 MB, Compilación: 0.09767587890625 MB
+Iteración 18 completada.
+Ejecutando iteración con 19 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+19
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1231.587 milisegundos
+Uso medio de RAM: 108.824 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:27:03
+Duración de la iteración : 2272.66 ms
+Tiempo de ejecución promedio: 2272.656 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 12911.429 KB
+Pico de uso de RAM: 12912 KB
+Qubits utilizados: 19
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+19
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1229.390 milisegundos
+Uso medio de RAM: 107.554 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:27:12
+Duración de la iteración : 2158.25 ms
+Tiempo de ejecución promedio: 2158.250 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 13035.399 KB
+Pico de uso de RAM: 13036 KB
+Qubits utilizados: 19
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+19
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_IQS.exe
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 97%] Built target specv2_bench.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1232.039 milisegundos
+Uso medio de RAM: 106.324 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:27:22
+Duración de la iteración : 2243.03 ms
+Tiempo de ejecución promedio: 2243.031 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 13047.423 KB
+Pico de uso de RAM: 13048 KB
+Qubits utilizados: 19
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+19
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 88%] Built target get_started_with_noisy_IQS.exe
+[ 88%] Built target specv2_bench.exe
+[ 88%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1348.624 milisegundos
+Uso medio de RAM: 97.027 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:27:33
+Duración de la iteración : 2399.47 ms
+Tiempo de ejecución promedio: 2399.471 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 13023.443 KB
+Pico de uso de RAM: 13024 KB
+Qubits utilizados: 19
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+19
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 85%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 85%] Built target get_started_with_IQS.exe
+[ 85%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Built target specv2_bench.exe
+[ 97%] Built target basic_code_for_scaling.exe
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1349.024 milisegundos
+Uso medio de RAM: 95.863 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:27:44
+Duración de la iteración : 2508.74 ms
+Tiempo de ejecución promedio: 2508.736 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 12947.468 KB
+Pico de uso de RAM: 12948 KB
+Qubits utilizados: 19
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+19
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 94%] Built target get_started_with_noisy_IQS.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1345.090 milisegundos
+Uso medio de RAM: 111.245 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:27:54
+Duración de la iteración : 2478.27 ms
+Tiempo de ejecución promedio: 2478.266 ms
+Desviación estándar del tiempo: 0.000 ms
+Uso medio de RAM: 13110.180 KB
+Pico de uso de RAM: 13112 KB
+Qubits utilizados: 19
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+19
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[ 70%] Built target iqs
+[ 76%] Built target get_started_with_noisy_IQS.exe
+[ 94%] Built target get_started_with_IQS.exe
+[ 94%] Built target basic_code_for_scaling.exe
+[ 94%] Built target specv2_bench.exe
+[ 97%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs-qv/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1234.421 milisegundos
+Uso medio de RAM: 104.217 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+
+This introductory code is thought to be run with MPI.
+However the code will execute also without MPI.
+Execution starts: 2025-09-16 13:28:05
