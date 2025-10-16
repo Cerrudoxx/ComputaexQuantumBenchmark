@@ -43,12 +43,6 @@ python Code/Grover/Qiskit/grover_qiskit_main.py 3-30 1024
 - Arguments: Specify qubits range (e.g., `3-30`) and other parameters as needed.
 - Outputs: Performance data (execution time, CPU/RAM) saved to CSV in `Results/`, with plots generated via Matplotlib.
 
-Example for Grover on Qiskit:
-```python
-from Code.Grover.Qiskit.grover_qiskit_main import run_benchmark
-results = run_benchmark(max_qubits=10)
-print(results)  # Execution time, CPU/RAM per qubit count
-```
 
 For QV, circuits are generated dynamically using Qiskit’s generator (`qiskitCircuitGenerator.py`) and translated for other simulators. All implementations ensure equivalent circuits.
 
