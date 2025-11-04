@@ -1,4 +1,4 @@
-![][logo]
+![alt text][logo]
 
 # Computaex Quantum Benchmark Simulator (HPC-QuBench)
 
