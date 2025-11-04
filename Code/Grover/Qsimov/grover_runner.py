@@ -10,9 +10,32 @@ import threading
 from datetime import datetime
 
 class GroverRunner:
-    """Clase para ejecutar el algoritmo de Grover y medir su rendimiento."""
+    """A class to run Grover's algorithm and measure its performance using Qsimov.
+
+    Attributes:
+        n (int): The number of qubits.
+        num_iterations (int): The number of iterations to run the algorithm.
+        cores (int): The number of CPU cores to use.
+        ram_monitor (RAMMonitor): The RAM monitor to use.
+        cpu_monitor (CPUMonitor): The CPU monitor to use.
+        console (Console): The rich console object to use for output.
+        circuit (QCircuit): The Qsimov circuit for Grover's algorithm.
+        executor (Drewom): The Qsimov executor to run the circuit.
+        ram_csv_file (str): The name of the CSV file to save RAM usage to.
+    """
     
     def __init__(self, n: int, num_iterations: int, cores: int, ram_monitor, cpu_monitor, console: Console, ram_csv_file: str):
+        """Initializes the GroverRunner.
+
+        Args:
+            n (int): The number of qubits.
+            num_iterations (int): The number of iterations to run the algorithm.
+            cores (int): The number of CPU cores to use.
+            ram_monitor (RAMMonitor): The RAM monitor to use.
+            cpu_monitor (CPUMonitor): The CPU monitor to use.
+            console (Console): The rich console object to use for output.
+            ram_csv_file (str): The name of the CSV file to save RAM usage to.
+        """
         self.n = n
         self.num_iterations = num_iterations
         self.cores = cores
@@ -22,7 +45,6 @@ class GroverRunner:
         self.circuit = self._build_circuit()
         self.ram_csv_file = ram_csv_file
 
-        # Create the quantum machine
         self.executor = qj.Drewom(qmachine="doki",
                             extra={"num_threads": self.cores,
                                     "random_generator": np.random.rand,
@@ -31,19 +53,19 @@ class GroverRunner:
         
 
     def _build_circuit(self) -> QCircuit:
-        """Construye el circuito cuántico de Grover con iteraciones óptimas."""
+        """Builds the Qsimov circuit for Grover's algorithm.
+
+        Returns:
+            QCircuit: The Qsimov circuit for Grover's algorithm.
+        """
         optimal_num_iterations = math.floor(math.pi / (4 * math.asin(math.sqrt(1 / 2**self.n))))
         c = QCircuit(self.n, self.n, name="Grover")
         
-        # Inicialización con puertas Hadamard
         for qubit in range(self.n):
             c.add_operation("H", targets=qubit)
         
-        # Iteraciones de Grover (oráculo + difusor)
         for _ in range(optimal_num_iterations):
-            # Oráculo
             c.add_operation("Z", targets=self.n - 1, controls=[i for i in range(self.n - 1)])
-            # Difusor
             for qubit in range(self.n):
                 c.add_operation("H", targets=qubit)
             for qubit in range(self.n):
@@ -54,13 +76,19 @@ class GroverRunner:
             for qubit in range(self.n):
                 c.add_operation("H", targets=qubit)
         
-        # Medición
         targets = [i for i in range(self.n)]
         c.add_operation("MEASURE", targets=targets, outputs=targets)
         
         return c
     def _run_simulation(self, num_executions: int) -> List[float]:
-        """Ejecuta la simulación num_executions veces y devuelve los tiempos."""
+        """Runs the simulation a given number of times and returns the execution times.
+
+        Args:
+            num_executions (int): The number of times to run the simulation.
+
+        Returns:
+            list[float]: A list of execution times in nanoseconds.
+        """
         times = []
         for _ in range(num_executions):
             t1 = time.perf_counter_ns()
@@ -70,38 +98,32 @@ class GroverRunner:
         return times
 
     def run(self) -> dict:
-        """Ejecuta el algoritmo de Grover y devuelve los resultados."""
+        """Runs Grover's algorithm and returns the results.
+
+        Returns:
+            dict: A dictionary containing the results of the execution.
+        """
         self.console.print(f"Comienza la ejecución: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", style="green")
 
         
         if self.cpu_monitor:
             self.cpu_monitor.start()
         
-        # monitor_thread = None
         if self.ram_monitor:
             self.ram_monitor.start()
-            # Hilo para escribir en el archivo CSV (ajusta según tu implementación)
-            # monitor_thread = threading.Thread(target=self.ram_monitor.real_time_memory_usage, 
-            #                                 args=(self.ram_csv_file,))
-            # monitor_thread.daemon = True
-            # monitor_thread.start()
-        # Iteraciones iniciales
         n_iterations_in = 10
         t_for_loop = self._run_simulation(n_iterations_in)
         t_grover = statistics.mean(t_for_loop) / 1e9 if t_for_loop else 0
         std_grover = statistics.stdev(t_for_loop) / 1e9 if len(t_for_loop) > 1 else 0
         
-        #Si t_grover es mayot que 2,4 horas significa que el algoritmo tarda mas de un dia en ejecutar y se detiene de forma segura
         if t_grover > 8640:
             self.console.print(f"El algoritmo tarda más de un día en ejecutarse. Deteniendo la ejecución a las {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", style="red")
             exit(0)
 
-        # Calcular iteraciones óptimas
         iterations_number = (math.ceil((2 * 1.96 * std_grover) / (0.05 * t_grover)) ** 2 
                              if t_grover > 0 else n_iterations_in)
         self.console.print(f"Optimal number of iterations: {iterations_number}", style="blue")
 
-        # Más iteraciones si es necesario
         if iterations_number > n_iterations_in:
             t_for_loop = (self._run_simulation(iterations_number - n_iterations_in) + 
                           self._run_simulation(n_iterations_in))
@@ -111,7 +133,6 @@ class GroverRunner:
         t_grover_final = statistics.mean(t_for_loop) / 1e9 if t_for_loop else 0
         std_grover_final = statistics.stdev(t_for_loop) / 1e9 if len(t_for_loop) > 1 else 0
 
-        # Obtener métricas de recursos
         cpu_avg = self.cpu_monitor.average() if self.cpu_monitor else 0
         ram_avg = self.ram_monitor.average() if self.ram_monitor else 0
         ram_mb = self.ram_monitor.max_memory_usage_in_mb() if self.ram_monitor else 0
@@ -121,8 +142,6 @@ class GroverRunner:
             self.cpu_monitor.stop()
         if self.ram_monitor:
             self.ram_monitor.stop()
-            # if monitor_thread and monitor_thread.is_alive():
-            #     monitor_thread.join()
             
         self.console.print(f"Termina la ejecución: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", style="green")
 
