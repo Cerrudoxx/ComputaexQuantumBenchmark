@@ -1,4 +1,6 @@
-# Computaex Quantum Benchmark Simulator
+![][logo]
+
+# Computaex Quantum Benchmark Simulator (HPC-QuBench)
 
 This repository contains Python and C++ implementations of quantum algorithms for benchmarking quantum simulators on the Lusitania supercomputer. It evaluates performance metrics (execution time, CPU, and RAM usage) for Grover's Algorithm, Quantum Fourier Transform (QFT), and Quantum Volume (QV) across 3 to 30 qubits, with limits of 2.4 hours per iteration and 32 GB memory to ensure fair resource usage.
 
@@ -67,4 +69,7 @@ TODO
 ## License
 TODO (check individual simulator licenses for compatibility).
 
-For issues, open a GitHub issue. Code is optimized for Lusitania HPC but extensible to other clusters.
+For issues, open a GitHub issue. Code is optimized for Lusitania HPC but may be extensible to other clusters.
+
+
+[logo]: [https://github.com/Cerrudoxx/ComputaexQuantumBenchmark/blob/main/HPC-QuBench-Logo.png] "HPC-QuBench Logo"
