@@ -4,6 +4,11 @@ import argparse
 import sys
 
 def main(args=None):
+    """Generates a Quantum Volume circuit and saves it to a QASM file.
+
+    Args:
+        args (list, optional): A list of command-line arguments. Defaults to None.
+    """
     parser = argparse.ArgumentParser(description="Generate a Quantum Volume circuit.")
     parser.add_argument("num_qubits", type=int, help="Number of qubits (must be > 2)")
     parsed_args = parser.parse_args(args)

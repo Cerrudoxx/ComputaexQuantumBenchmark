@@ -1,25 +1,26 @@
 # Computaex Quantum Benchmark Simulator
 
-This repository contains Python and C++ implementations of quantum algorithms for benchmarking quantum simulators on the Lusitania supercomputer. It evaluates performance metrics (execution time, CPU, and RAM usage) for Grover's Algorithm, Quantum Fourier Transform (QFT), and Quantum Volume (QV) across 3 to 30 qubits, with limits of 2.4 hours per iteration and 32 GB memory to ensure fair resource usage.
+## Project Overview
+This repository provides a comprehensive framework for benchmarking quantum simulators using a suite of standard quantum algorithms. It is designed to evaluate and compare the performance of various quantum simulators on the Lusitania supercomputer, focusing on metrics such as execution time, CPU usage, and RAM consumption. The benchmarks are implemented for Grover's Algorithm, the Quantum Fourier Transform (QFT), and Quantum Volume (QV), covering a range of circuit complexities and entanglement patterns.
 
-The code uses a common interface (`_build_circuit` and `_run_simulation`) for consistent comparison across simulators: Qiskit, Qulacs, Qibo, Qsimov, Cirq, PennyLane, and Intel Quantum Simulator (IQS). Python-based simulators run in Conda environments; IQS uses C++.
+The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qibo, Qsimov, Cirq, PennyLane, and the Intel Quantum Simulator (IQS). Each simulator is tested across a range of 3 to 30 qubits, with built-in constraints to ensure fair and efficient resource utilization on shared high-performance computing (HPC) systems.
 
 ## Features
 - **Benchmark Algorithms**:
-  - **Grover's Algorithm**: Searches an unordered database using oracle and diffuser operations, targeting the last state (e.g., |111⟩ for 3 qubits) with ≈ ⌊π/4 * √(2^n)⌋ iterations. Selected for its high complexity and entanglement, challenging beyond 4-5 qubits on real hardware.
-  - **Quantum Fourier Transform (QFT)**: Quantum analog of the Discrete Fourier Transform, used in algorithms like Shor's. Low-depth, low-entanglement circuit. Uses built-in functions (Qiskit, Qibo, Cirq, PennyLane) or custom implementations (Qsimov, Qulacs).
-  - **Quantum Volume (QV)**: Generates random square circuits (depth = qubits) to compare architectures. Circuits are created with Qiskit's generator, translated via QASM2, and dynamically generated per measurement.
+  - **Grover's Algorithm**: A quantum search algorithm that demonstrates a quadratic speedup over classical search. It is known for its high complexity and entanglement, making it a challenging benchmark for simulators, especially as the number of qubits increases.
+  - **Quantum Fourier Transform (QFT)**: The quantum analogue of the Discrete Fourier Transform, a fundamental building block in many quantum algorithms, including Shor's algorithm for factoring. The QFT circuit has a relatively low depth and entanglement.
+  - **Quantum Volume (QV)**: A metric that measures the largest square circuit a quantum computer can successfully implement. The benchmark generates random square circuits (where the depth equals the number of qubits) to provide a comprehensive test of a simulator's performance.
 
-- **Performance Measurement**: Uses Python's `time` for execution time and `psutil` for CPU/RAM usage. Tests increment qubits from 3 to 30, halting if time or memory limits are exceeded.
+- **Performance Measurement**: The framework uses Python's `time` module for precise execution time measurements and `psutil` for monitoring CPU and RAM usage. The benchmarks are designed to incrementally increase the number of qubits from 3 to 30, with automatic termination if predefined time or memory limits are exceeded.
 
-- **Simulators**:
-  - **[Qiskit](https://qiskit.org/)**: IBM's open-source SDK for quantum programming and simulation, with qiskit-aer for high-performance.
-  - **[Qulacs](https://qulacs.org/)**: C++/Python simulator optimized for large-scale circuits, with GPU support.
-  - **[Qibo](https://qibo.science/)**: Full-stack framework with C++/CUDA backends for simulation and hardware control.
-  - **[Qsimov](https://github.com/qsimov)**: Python/NumPy-based simulator from UCLM, focused on adaptability and parallelism.
-  - **[Cirq](https://quantumai.google/cirq)**: Google's Python framework for NISQ circuits, supporting simulation and hardware.
-  - **[PennyLane](https://pennylane.ai/)**: Xanadu's library for quantum ML/chemistry, integrating with simulators and hardware.
-  - **[Intel Quantum Simulator (IQS)](https://github.com/intel/intel-qs)**: C++ simulator optimized for multi-core/multi-node architectures, using state-vector representation.
+- **Supported Simulators**:
+  - **[Qiskit](https://qiskit.org/)**: An open-source SDK for quantum computing developed by IBM.
+  - **[Qulacs](https://qulacs.org/)**: A fast quantum circuit simulator for large-scale quantum circuits, with GPU support.
+  - **[Qibo](https://qibo.science/)**: A full-stack quantum simulation framework with support for multiple backends, including CPUs and GPUs.
+  - **[Qsimov](https://github.com/qsimov)**: A flexible and adaptable quantum circuit simulator developed at UCLM, with a focus on parallelism.
+  - **[Cirq](https://quantumai.google/cirq)**: A Python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.
+  - **[PennyLane](https://pennylane.ai/)**: A cross-platform Python library for differentiable programming of quantum computers.
+  - **[Intel Quantum Simulator (IQS)](https://github.com/intel/intel-qs)**: A high-performance C++ simulator optimized for multi-core and multi-node architectures.
 
 ## Installation
 1. Clone the repository:
@@ -28,38 +29,37 @@ The code uses a common interface (`_build_circuit` and `_run_simulation`) for co
    cd ComputaexQuantumBenchmark
    ```
 
-2. Set up Conda environment (for Python simulators):
+2. Set up the Conda environments for the Python-based simulators. Each simulator has its own Conda environment to manage its dependencies. The environment files are located in the root of the repository.
+   ```bash
+   conda env create -f environment-qiskit.yml
+   conda env create -f environment-cirq.yml
+   conda env create -f environment-pennylane.yml
+   conda env create -f environment-qibo.yml
+   conda env create -f environment-qsimov.yml
+   conda env create -f environment-qulacs.yml
+   ```
 
-   - The implementation of each simulator is located in `Code/<Algorithm>/<Simulator>/` (e.g., `Code/Grover/Qiskit/`, `Code/QFT/Qulacs/`).
-
+3. For the Intel Quantum Simulator (IQS), you will need to compile the C++ source code. The source code and build instructions are located in the `Code/<Algorithm>/IQS/intel-qs` directories.
 
 ## Usage
-Run benchmarks via the main script in each simulator's folder (e.g., `grover_qiskit_main.py`, `qulacs_main.py`):
+To run a benchmark, navigate to the directory of the desired algorithm and simulator and execute the main script. For example, to run the Grover's algorithm benchmark with Qiskit, you would run the following command:
 
 ```bash
-python Code/Grover/Qiskit/grover_qiskit_main.py 3-30 1024 
+python Code/Grover/Qiskit/grover_qiskit_main.py 3-10 1024
 ```
 
-- Arguments: Specify qubits range (e.g., `3-30`) and other parameters as needed.
-- Outputs: Performance data (execution time, CPU/RAM) saved to CSV in `Results/`, with plots generated via Matplotlib.
+The first argument specifies the range of qubits to test (e.g., `3-10`), and the second argument specifies the number of iterations. The script will output the performance data to a CSV file in the `Results/` directory and generate plots of the results using Matplotlib.
 
+For the Quantum Volume benchmarks, the circuits are generated dynamically using a Qiskit-based script (`qiskitCircuitGenerator.py`) and then translated to the target simulator's format.
 
-For QV, circuits are generated dynamically using Qiskit’s generator (`qiskitCircuitGenerator.py`) and translated for other simulators. All implementations ensure equivalent circuits.
-
-## Structure
-- `Code/`: Contains algorithm-specific directories:
-  - `Grover/`: Grover's Algorithm implementations.
-  - `QFT/`: Quantum Fourier Transform implementations.
-  - `QuantumVolume/`: Quantum Volume random circuit implementations.
-  - Each algorithm directory contains subdirectories for each simulator (e.g., `Qiskit/`, `Qulacs/`), with files:
-    - `<simulator>_main.py`: Main script to run the benchmark.
-    - `grover_runner.py`/`runner.py`: Executes the simulation logic.
-    - `ResourceMonitor.py`: Tracks CPU, RAM, and execution time.
-    - `results_handler.py`: Processes and saves results.
-    - `qiskitCircuitGenerator.py` (for QV): Generates random circuits.
-    - `intel-qs` (for IQS): C++ source code or build instructions.
-- `Results/`: Stores output logs and plots.
-- `README.markdown`: Project documentation.
+## Repository Structure
+- `Code/`: Contains the source code for the benchmark implementations, organized by algorithm and then by simulator.
+  - `Grover/`: Implementations of Grover's Algorithm.
+  - `QFT/`: Implementations of the Quantum Fourier Transform.
+  - `QuantumVolume/`: Implementations of the Quantum Volume benchmark.
+- `Results/`: The default directory for storing output logs, CSV files, and plots.
+- `README.md`: This file.
+- `environment-*.yml`: Conda environment files for each of the Python-based simulators.
 
 ## Contributing
 TODO
@@ -67,4 +67,4 @@ TODO
 ## License
 TODO (check individual simulator licenses for compatibility).
 
-For issues, open a GitHub issue. Code is optimized for Lusitania HPC but extensible to other clusters.
+For issues, please open a GitHub issue. The code is optimized for the Lusitania HPC environment but is designed to be extensible to other systems.

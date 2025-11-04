@@ -2,18 +2,32 @@ import os
 import csv
 from rich.console import Console
 from rich.table import Table
+from datetime import datetime
 
 class ResultsHandler:
-    """Clase para manejar la visualización y guardado de resultados."""
+    """A class to handle the display and saving of results.
+
+    Attributes:
+        file_name (str): The name of the CSV file to save results to.
+        results_dir (str): The directory to save results in.
+        console (Console): The rich console object to use for output.
+    """
     
     def __init__(self, file_name: str, results_dir: str, console: Console):
+        """Initializes the ResultsHandler.
+
+        Args:
+            file_name (str): The name of the CSV file to save results to.
+            results_dir (str): The directory to save results in.
+            console (Console): The rich console object to use for output.
+        """
         self.file_name = os.path.join(results_dir, file_name + '.csv')
         self.results_dir = results_dir
         self.console = console
         self._ensure_csv_headers()
 
     def _ensure_csv_headers(self) -> None:
-        """Asegura que el archivo CSV tenga encabezados si es nuevo."""
+        """Ensures that the CSV file has headers if it is new."""
         if not os.path.isfile(self.file_name):
             with open(self.file_name, mode='w', newline='') as csv_file:
                 csv_writer = csv.writer(csv_file)
@@ -21,7 +35,11 @@ class ResultsHandler:
                                      'cpu_avg', 'ram_avg', 'ram_mb', 'ram_peak', 'cores'])
 
     def save_to_csv(self, data: dict) -> None:
-        """Guarda los datos en el archivo CSV."""
+        """Saves the given data to the CSV file.
+
+        Args:
+            data (dict): A dictionary containing the data to save.
+        """
         with open(self.file_name, mode='a', newline='') as csv_file:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerow([data['n'], data['iterations_number'], data['t_grover'], 
@@ -30,7 +48,11 @@ class ResultsHandler:
         self.console.print(f"Data appended to {self.file_name}", style="bold red")
 
     def display_timing_table(self, data: dict) -> None:
-        """Muestra la tabla de tiempos y desviación."""
+        """Displays a table of timing and deviation data.
+
+        Args:
+            data (dict): A dictionary containing the timing data.
+        """
         table = Table(title="Tiempo y Desviación")
         table.add_column("Tiempo Medio Total (s)", justify="center", style="cyan")
         table.add_column("Desviación Típica (s)", justify="center", style="magenta")
@@ -38,7 +60,11 @@ class ResultsHandler:
         self.console.print(table)
 
     def display_usage_table(self, data: dict) -> None:
-        """Muestra la tabla de uso de CPU y RAM."""
+        """Displays a table of CPU and RAM usage data.
+
+        Args:
+            data (dict): A dictionary containing the usage data.
+        """
         table = Table(title="Uso de CPU y RAM")
         table.add_column("CPU Avg (%)", justify="center", style="green")
         table.add_column("RAM Avg (%)", justify="center", style="red")
@@ -49,6 +75,6 @@ class ResultsHandler:
         self.console.print(table)
 
     def save_console_output(self) -> None:
-        """Guarda la salida de la consola en un archivo."""
+        """Saves the console output to a file."""
         with open(os.path.join(self.results_dir, "out.txt"), "w") as f:
             f.write(self.console.export_text())

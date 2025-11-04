@@ -13,22 +13,31 @@ import subprocess
 import re
 
 class Runner:    
-    
-    """
-    Inicializa una instancia de la clase Runner.
+    """A class to run the Quantum Volume algorithm and measure its performance using Qsimov.
 
-    Parámetros:
-    - n (int): Número de qubits del circuito cuántico. Determina el tamaño del registro cuántico y, por tanto, la complejidad del circuito a simular.
-    - num_iterations (int): Número de shots.
-    - cores (int): Número de núcleos de CPU a utilizar en la simulación. Permite paralelizar la ejecución para aprovechar mejor los recursos del sistema.
-    - ram_monitor: Objeto encargado de monitorizar el uso de memoria RAM durante la ejecución de la simulación. 
-    - cpu_monitor: Objeto encargado de monitorizar el uso de CPU durante la ejecución. 
-    - console (Console): Instancia de rich.console.Console.
-    - ram_csv_file (str): Ruta al archivo CSV donde se almacenarán los datos de uso de memoria RAM etc.
-
-    El constructor también inicializa el circuito cuántico y el ejecutor (executor) que se encargará de simular el circuito usando los parámetros proporcionados.
+    Attributes:
+        n (int): The number of qubits.
+        num_iterations (int): The number of iterations to run the algorithm.
+        cores (int): The number of CPU cores to use.
+        ram_monitor (RAMMonitor): The RAM monitor to use.
+        cpu_monitor (CPUMonitor): The CPU monitor to use.
+        console (Console): The rich console object to use for output.
+        circuit (QCircuit): The Qsimov circuit for the Quantum Volume algorithm.
+        executor (Drewom): The Qsimov executor to run the circuit.
+        ram_csv_file (str): The name of the CSV file to save RAM usage to.
     """
     def __init__(self, n: int, num_iterations: int, cores: int, ram_monitor, cpu_monitor, console: Console, ram_csv_file: str):
+        """Initializes the Runner.
+
+        Args:
+            n (int): The number of qubits.
+            num_iterations (int): The number of iterations to run the algorithm.
+            cores (int): The number of CPU cores to use.
+            ram_monitor (RAMMonitor): The RAM monitor to use.
+            cpu_monitor (CPUMonitor): The CPU monitor to use.
+            console (Console): The rich console object to use for output.
+            ram_csv_file (str): The name of the CSV file to save RAM usage to.
+        """
         self.n = n
         self.num_iterations = num_iterations
         self.cores = cores
@@ -47,15 +56,19 @@ class Runner:
         
     
     def build_qiskit_QV(self):
+        """Builds a Quantum Volume circuit using Qiskit and saves it to a QASM file."""
         qiskitEnv = "/home/jesus-cerrudo/anaconda3/envs/Qiskit3/bin/python3"
-        #qiskitEnv = "/lusitania_homes/CenitS/jesus.cerrudo/.conda/envs/Qiskit3/bin/python"
-        # Run the Qiskit example script
         result = subprocess.run([qiskitEnv, "qiskitCircuitGenerator.py", str(self.n)], capture_output=True, text=True)
-        # print("STDOUT:\n", result.stdout)
-        # print("STDERR:\n", result.stderr)
-        # print(result.returncode)
         
     def translate_circuit(self, qc: qj.QCircuit) -> qj.QCircuit:
+        """Translates a QASM circuit to a Qsimov circuit.
+
+        Args:
+            qc (qj.QCircuit): The Qsimov circuit to add the translated operations to.
+
+        Returns:
+            qj.QCircuit: The translated Qsimov circuit.
+        """
         with open("qv_circuit.qasm", "r") as archivo:
          lineas = archivo.readlines()
 
@@ -63,10 +76,8 @@ class Runner:
             instruccion = linea.strip()
 
             if instruccion.startswith("u"):
-            # Buscar la instrucción con regex
                 match = re.match(r'u\(([^,]+),([^,]+),([^)]+)\)\s+q\[(\d+)\];', instruccion)
                 if match:
-                    # Evaluamos cada valor con pi definido
                     context = {"pi": math.pi}
 
                     theta = float(eval(match.group(1), {}, context))
@@ -74,20 +85,15 @@ class Runner:
                     lambd = float(eval(match.group(3), {}, context))
                     qubit = int(match.group(4))
                     
-                    #print(f"U gate -> θ: {theta}, φ: {phi}, λ: {lambd}, qubit: {qubit}")
-
                     qc.add_operation('U('+str(theta)+','+str(phi)+','+str(lambd)+')',targets=qubit)
-                   # print(f"U gate -> θ: {theta}, φ: {phi}, λ: {lambd}, qubit: {qubit}")
                 else:
                     print(f"Instrucción U mal formada: {instruccion}")
 
             elif instruccion.startswith("cx"):
-                # Regex para extraer los dos índices
                 match = re.match(r'cx\s+q\[(\d+)\],q\[(\d+)\];', instruccion)
                 if match:
                     qubit1 = int(match.group(1))
                     qubit2 = int(match.group(2))
-                    # print(f"CX gate -> qubit1: {qubit1}, qubit2: {qubit2}")
                     qc.add_operation('X',targets=qubit2,controls=qubit1)
 
                 else:
@@ -97,13 +103,12 @@ class Runner:
                 print(f"Instrucción no reconocida: {instruccion}")    
         return qc
         
-    """
-    Construye un circuito cuántico que implementa la Transformada de Fourier Cuántica (QFT) para n qubits.
-
-    Returns:
-        QCircuit: El circuito cuántico construido que implementa la QFT sobre n qubits.
-    """
     def _build_circuit(self) -> QCircuit:
+        """Builds the Qsimov circuit for the Quantum Volume algorithm from a QASM file.
+
+        Returns:
+            QCircuit: The Qsimov circuit for the Quantum Volume algorithm.
+        """
         self.build_qiskit_QV()
         qc= qj.QCircuit(self.n,self.n,'QV')
         qc = self.translate_circuit(qc)
@@ -113,50 +118,50 @@ class Runner:
         return qc
     
     def _run_simulation(self, num_executions: int) -> List[float]:
-        """Ejecuta la simulación num_executions veces y devuelve los tiempos."""
+        """Runs the simulation a given number of times and returns the execution times.
+
+        Args:
+            num_executions (int): The number of times to run the simulation.
+
+        Returns:
+            list[float]: A list of execution times in nanoseconds.
+        """
         times = []
         for _ in range(num_executions):
-            self.circuit = self._build_circuit()  # Asegurarse de que el circuito esté actualizado
+            self.circuit = self._build_circuit()
             t1 = time.perf_counter_ns()
             result = self.executor.execute(self.circuit, iterations=self.num_iterations)
             t2 = time.perf_counter_ns()
-            #print(f"Execution result: {result}")
             times.append(t2 - t1)
         return times
 
     def run(self) -> dict:
-        """Ejecuta el algoritmo de Grover y devuelve los resultados."""
+        """Runs the Quantum Volume algorithm and returns the results.
+
+        Returns:
+            dict: A dictionary containing the results of the execution.
+        """
         self.console.print(f"Comienza la ejecución: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", style="green")
 
         
         if self.cpu_monitor:
             self.cpu_monitor.start()
         
-        # monitor_thread = None
         if self.ram_monitor:
             self.ram_monitor.start()
-            # Hilo para escribir en el archivo CSV (ajusta según tu implementación)
-            # monitor_thread = threading.Thread(target=self.ram_monitor.real_time_memory_usage, 
-            #                                 args=(self.ram_csv_file,))
-            # monitor_thread.daemon = True
-            # monitor_thread.start()
-        # Iteraciones iniciales
         n_iterations_in = 10
         t_for_loop = self._run_simulation(n_iterations_in)
         t_grover = statistics.mean(t_for_loop) / 1e9 if t_for_loop else 0
         std_grover = statistics.stdev(t_for_loop) / 1e9 if len(t_for_loop) > 1 else 0
         
-        #Si t_grover es mayot que 2,4 horas significa que el algoritmo tarda mas de un dia en ejecutar y se detiene de forma segura
         if t_grover > 8640:
             self.console.print(f"El algoritmo tarda más de un día en ejecutarse. Deteniendo la ejecución a las {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", style="red")
             exit(0)
 
-        # Calcular iteraciones óptimas
         iterations_number = (math.ceil((2 * 1.96 * std_grover) / (0.05 * t_grover)) ** 2 
                              if t_grover > 0 else n_iterations_in)
         self.console.print(f"Optimal number of iterations: {iterations_number}", style="blue")
 
-        # Más iteraciones si es necesario
         if iterations_number > n_iterations_in:
             t_for_loop = (self._run_simulation(iterations_number - n_iterations_in) + 
                           self._run_simulation(n_iterations_in))
@@ -166,7 +171,6 @@ class Runner:
         t_grover_final = statistics.mean(t_for_loop) / 1e9 if t_for_loop else 0
         std_grover_final = statistics.stdev(t_for_loop) / 1e9 if len(t_for_loop) > 1 else 0
 
-        # Obtener métricas de recursos
         cpu_avg = self.cpu_monitor.average() if self.cpu_monitor else 0
         ram_avg = self.ram_monitor.average() if self.ram_monitor else 0
         ram_mb = self.ram_monitor.max_memory_usage_in_mb() if self.ram_monitor else 0
@@ -176,8 +180,6 @@ class Runner:
             self.cpu_monitor.stop()
         if self.ram_monitor:
             self.ram_monitor.stop()
-            # if monitor_thread and monitor_thread.is_alive():
-            #     monitor_thread.join()
             
         self.console.print(f"Termina la ejecución: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", style="green")
 

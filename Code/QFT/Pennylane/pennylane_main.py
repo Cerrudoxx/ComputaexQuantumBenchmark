@@ -10,7 +10,15 @@ import psutil
 import rich
 
 def set_active_cores(cores: int, console) -> int:
-    """Configura el número de núcleos activos."""
+    """Sets the number of active CPU cores for the current process.
+
+    Args:
+        cores (int): The number of CPU cores to use.
+        console (Console): The rich console object to use for output.
+
+    Returns:
+        int: The number of active CPU cores.
+    """
     os.environ["OMP_NUM_THREADS"] = str(cores)
     os.environ["MKL_NUM_THREADS"] = str(cores)
     os.environ["NUMEXPR_NUM_THREADS"] = str(cores)
@@ -28,7 +36,8 @@ def set_active_cores(cores: int, console) -> int:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run Hadammard's algorithm with a specified number of qubits and iterations")
+    """The main function for running the QFT algorithm with Pennylane."""
+    parser = argparse.ArgumentParser(description="Run the Quantum Fourier Transform (QFT) with a specified number of qubits and iterations")
     parser.add_argument("n", type=str, help="Number of qubits or range (e.g., '4' or '4-7')")
     parser.add_argument("num_iterations", type=str, help="Number of iterations or range (e.g., '512' or '512-1024')")
     parser.add_argument("--cores", type=int, default=os.cpu_count(), help="Number of CPU cores to use")
@@ -36,7 +45,6 @@ def main():
     parser.add_argument("--no-cpu", action='store_false', dest='cpu', default=True, help="Do not monitor CPU")
     args = parser.parse_args()
     
-    # Parsear qubits
     if '-' in args.n:
         start, end = map(int, args.n.split('-'))
         if start >= end:
@@ -50,7 +58,6 @@ def main():
             sys.exit(1)
         qubits_list = [n]
         
-    # Parsear iteraciones
     if '-' in args.num_iterations:
         start, end = map(int, args.num_iterations.split('-'))
         if start >= end:
@@ -65,7 +72,6 @@ def main():
         iterations_list = [num_iterations]
         
         
-    # Crear directorio de resultados
     results_dir = f"results_{args.n}_qubits_{args.num_iterations}_iterations_{args.cores}_cores"
     index = 0
     base_dir = results_dir
@@ -74,29 +80,18 @@ def main():
         results_dir = f"{base_dir}({index})"
     os.makedirs(results_dir)
 
-# Configurar núcleos
     actual_cores = os.cpu_count()
     args.cores = min(args.cores, actual_cores)
     console = Console(record=True)
     console.print(f"Using {args.cores} cores", style="bold green")
     set_active_cores(args.cores, console)
 
-    # Inicializar manejador de resultados
-    times_file_name = f'Hadammard_data_pennylane_{args.n}'
+    times_file_name = f'QFT_data_pennylane_{args.n}'
     results_handler = ResultsHandler(times_file_name, results_dir, console)
 
-    # Monitoreo continuo de RAM
-    # file_name = os.path.join(results_dir, f"Hadammard_qibo_{args.n}_qubits_{args.num_iterations}_iterations_{args.cores}_cores.csv")
-    # if args.ram:
-    #     ram_monitor_continuous = ResourceMonitor.RAMMonitor()
-    #     monitor_thread = threading.Thread(target=ram_monitor_continuous.real_time_memory_usage, args=(file_name,))
-    #     monitor_thread.daemon = True
-    #     monitor_thread.start()
-
-    # Ejecutar para cada n y num_iterations
     for n in qubits_list:
         for num_iterations in iterations_list:
-            console.print(f"Running Hadammard's algorithm with {n} qubits, {num_iterations} iterations, and {args.cores} cores...", style="bright_magenta")
+            console.print(f"Running QFT with {n} qubits, {num_iterations} iterations, and {args.cores} cores...", style="bright_magenta")
             cpu_monitor = ResourceMonitor.CPUMonitor(interval=0.1) if args.cpu else None
             ram_monitor = ResourceMonitor.RAMMonitor(interval=0.1) if args.ram else None
             
@@ -108,9 +103,7 @@ def main():
             results_handler.display_usage_table(results)
             results_handler.save_to_csv(results)
 
-    # Finalizar
     if args.ram:
-        #ResourceMonitor.plot_ram_usage_from_csv(ram_csv_file)
         ResourceMonitor.plot_ram_avg_from_results(os.path.join(results_dir, f"{times_file_name}.csv"))
 
     ResourceMonitor.plot_t_from_csv(os.path.join(results_dir, f"{times_file_name}.csv"))
