@@ -72,4 +72,4 @@ TODO (check individual simulator licenses for compatibility).
 For issues, open a GitHub issue. Code is optimized for Lusitania HPC but may be extensible to other clusters.
 
 
-[logo]: [https://github.com/Cerrudoxx/ComputaexQuantumBenchmark/blob/main/HPC-QuBench-Logo.png] "HPC-QuBench Logo"
+[logo]: https://github.com/Cerrudoxx/ComputaexQuantumBenchmark/blob/main/HPC-QuBench-Logo.png "HPC-QuBench Logo"
