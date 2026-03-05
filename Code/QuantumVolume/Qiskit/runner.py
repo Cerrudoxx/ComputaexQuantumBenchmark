@@ -71,8 +71,8 @@ class Runner:
         times = []
         for _ in range(num_executions):
             self.qc = self._build_circuit()
-            transpiled_qc = transpile(self.qc, simulator)
             t1 = time.perf_counter_ns()
+            transpiled_qc = transpile(self.qc, simulator)
             simulator.run([transpiled_qc], shots=self.num_iterations).result()
             t2 = time.perf_counter_ns()
             times.append(t2 - t1)

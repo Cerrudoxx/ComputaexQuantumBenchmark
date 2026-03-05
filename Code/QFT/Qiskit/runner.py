@@ -67,10 +67,10 @@ class Runner:
         """
         simulator = AerSimulator(method='statevector')
         simulator.set_options(max_parallel_threads=self.cores)
-        transpiled_qc = transpile(self.qc, simulator, optimization_level=3)
         times = []
         for _ in range(num_executions):
             t1 = time.perf_counter_ns()
+            transpiled_qc = transpile(self.qc, simulator, optimization_level=3)
             result = simulator.run([transpiled_qc], shots=self.num_iterations).result()
             t2 = time.perf_counter_ns()
             times.append(t2 - t1)
