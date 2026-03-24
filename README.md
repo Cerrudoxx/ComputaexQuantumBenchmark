@@ -17,7 +17,7 @@ The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qi
   - **[Qiskit](https://qiskit.org/)**: An open-source SDK for quantum computing developed by IBM.
   - **[Qulacs](https://qulacs.org/)**: A fast quantum circuit simulator for large-scale quantum circuits, with GPU support.
   - **[Qibo](https://qibo.science/)**: A full-stack quantum simulation framework with support for multiple backends, including CPUs and GPUs.
-  - **[Qsimov](https://github.com/qsimov)**: A flexible and adaptable quantum circuit simulator developed at UCLM, with a focus on parallelism.
+  - **[Qsimov](https://github.com/Mowstyl/QSimov)**: A flexible and adaptable quantum circuit simulator developed at UCLM, with a focus on parallelism.
   - **[Cirq](https://quantumai.google/cirq)**: A Python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.
   - **[PennyLane](https://pennylane.ai/)**: A cross-platform Python library for differentiable programming of quantum computers.
   - **[Intel Quantum Simulator (IQS)](https://github.com/intel/intel-qs)**: A high-performance C++ simulator optimized for multi-core and multi-node architectures.
