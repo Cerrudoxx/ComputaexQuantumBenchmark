@@ -1,0 +1,12 @@
+User-defined cmake options:
+
+IqsMKL    = OFF
+IqsMPI    = ON
+IqsUtest  = ON
+IqsPython = ON
+IqsNoise  = OFF
+IqsNative = OFF
+IqsBuildAsStatic = OFF
+
+BuildExamples  = ON
+BuildInterface = OFF

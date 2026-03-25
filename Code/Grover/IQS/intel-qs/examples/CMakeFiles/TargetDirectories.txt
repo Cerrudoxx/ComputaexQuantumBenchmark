@@ -1,0 +1,3 @@
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/CMakeFiles/circuito.exe.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/CMakeFiles/edit_cache.dir
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/CMakeFiles/rebuild_cache.dir

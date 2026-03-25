@@ -1,0 +1,46 @@
+Ejecutando iteración con 3 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+3
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  3%] Built target openmp_test.exe
+[  7%] Built target gtest
+[ 50%] Built target iqs
+[ 54%] Built target gtest_main
+[ 67%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 72%] Built target get_started_with_IQS.exe
+[ 67%] Built target get_started_with_noisy_IQS.exe
+[ 72%] Built target specv2_bench.exe
+[ 81%] Built target mpi_env_test.exe
+[ 72%] Built target basic_code_for_scaling.exe
+[ 85%] Built target mpi_speedup_test.exe
+[ 92%] Built target intelqs_py
+[ 98%] Built target utest
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:180:5: error: expected unqualified-id before ‘if’
+  180 |     if (myid == 0 && t_grover > 8640) {
+      |     ^~
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:188:29: error: ‘n_iterations_in’ was not declared in this scope
+  188 |     int iterations_number = n_iterations_in;
+      |                             ^~~~~~~~~~~~~~~
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:189:5: error: expected unqualified-id before ‘if’
+  189 |     if (myid == 0 && t_grover > 0) {
+      |     ^~
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:198:5: error: expected unqualified-id before ‘if’
+  198 |     if (iterations_number > n_iterations_in) {
+      |     ^~
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:211:5: error: expected unqualified-id before ‘if’
+  211 |     if (myid == 0) {
+      |     ^~
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:217:5: error: expected unqualified-id before ‘if’
+  217 |     if (myid == 0 && !times.empty()) {
+      |     ^~
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:229:5: error: expected unqualified-id before ‘if’
+  229 |     if (myid == 0 && !memory_samples.empty()) {
+      |     ^~
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:293:1: error: expected declaration before ‘}’ token
+  293 | }
+      | ^
+make[2]: *** [examples/CMakeFiles/circuito.exe.dir/build.make:76: examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:276: examples/CMakeFiles/circuito.exe.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+Error: Fallo en la compilación.
+Error: Fallo al ejecutar scriptcompilacion.sh.

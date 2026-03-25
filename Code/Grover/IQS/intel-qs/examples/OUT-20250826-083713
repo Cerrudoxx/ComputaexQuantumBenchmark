@@ -1,0 +1,131 @@
+Ejecutando iteración con 3 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+3
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  7%] Built target gtest
+[  7%] Built target openmp_test.exe
+[ 50%] Built target iqs
+[ 54%] Built target gtest_main
+[ 70%] Built target specv2_bench.exe
+[ 70%] Built target get_started_with_noisy_IQS.exe
+[ 70%] Built target get_started_with_IQS.exe
+[ 74%] Built target mpi_env_test.exe
+[ 76%] Built target basic_code_for_scaling.exe
+[ 83%] Built target mpi_speedup_test.exe
+[ 89%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 92%] Built target intelqs_py
+[ 98%] Built target utest
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1320.101 milisegundos
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+[|s0>:  0] world_rank:    0 , state_rank:    0 (state   0 of   1) my_node_id:    0 , num_nodes:    1 , ranks/node:  1 , threads/rank: 16 --useful
+Execution starts: 2025-08-26 08:37:18
+Duración de la iteración 1: 1330 ms
+Duración de la iteración 2: 395.121 ms
+Duración de la iteración 3: 0.378305 ms
+Duración de la iteración 4: 0.274438 ms
+Duración de la iteración 5: 0.392952 ms
+Duración de la iteración 6: 0.274157 ms
+Duración de la iteración 7: 0.277734 ms
+Duración de la iteración 8: 1064.15 ms
+Duración de la iteración 9: 0.472862 ms
+Duración de la iteración 10: 0.292132 ms
+Tiempo de ejecución promedio inicial: 0.000000000000 ms
+Desviación estándar inicial: 477.295505454488 ms
+Tiempo de ejecución promedio: 279.163 ms
+Desviación estándar del tiempo: 477.296 ms
+Uso medio de RAM: 26685.346 KB
+Pico de uso de RAM: 26692 KB
+Qubits utilizados: 3
+Iteraciones óptimas: 10
+Iteración 3 completada.
+Ejecutando iteración con 4 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+4
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  7%] Built target openmp_test.exe
+[  7%] Built target gtest
+[ 50%] Built target iqs
+[ 54%] Built target gtest_main
+[ 69%] Built target get_started_with_noisy_IQS.exe
+[ 69%] Built target specv2_bench.exe
+[ 69%] Built target get_started_with_IQS.exe
+[ 72%] Built target mpi_env_test.exe
+[ 81%] Built target basic_code_for_scaling.exe
+[ 81%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 85%] Built target mpi_speedup_test.exe
+[ 92%] Built target intelqs_py
+[ 98%] Built target utest
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1350.212 milisegundos
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+[|s0>:  0] world_rank:    0 , state_rank:    0 (state   0 of   1) my_node_id:    0 , num_nodes:    1 , ranks/node:  1 , threads/rank: 16 --useful
+Execution starts: 2025-08-26 08:37:27
+Duración de la iteración 1: 0.803877 ms
+Duración de la iteración 2: 1.04713 ms
+Duración de la iteración 3: 0.883118 ms
+Duración de la iteración 4: 4.90512 ms
+Duración de la iteración 5: 0.862167 ms
+Duración de la iteración 6: 0.791675 ms
+Duración de la iteración 7: 4.47052 ms
+Duración de la iteración 8: 4.29877 ms
+Duración de la iteración 9: 20.3204 ms
+Duración de la iteración 10: 0.870083 ms
+Tiempo de ejecución promedio inicial: 0.000000000000 ms
+Desviación estándar inicial: 5.709764800563 ms
+Tiempo de ejecución promedio: 3.925 ms
+Desviación estándar del tiempo: 5.710 ms
+Uso medio de RAM: 27085.053 KB
+Pico de uso de RAM: 27100 KB
+Qubits utilizados: 4
+Iteraciones óptimas: 10
+Iteración 4 completada.
+Ejecutando iteración con 5 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+5
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  7%] Built target gtest
+[  7%] Built target openmp_test.exe
+[ 50%] Built target iqs
+[ 54%] Built target gtest_main
+[ 63%] Built target basic_code_for_scaling.exe
+[ 63%] Built target get_started_with_noisy_IQS.exe
+[ 65%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 67%] Built target specv2_bench.exe
+[ 70%] Built target get_started_with_IQS.exe
+[ 85%] Built target mpi_speedup_test.exe
+[ 85%] Built target mpi_env_test.exe
+[ 92%] Built target intelqs_py
+[ 98%] Built target utest
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 1654.924 milisegundos
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+[|s0>:  0] world_rank:    0 , state_rank:    0 (state   0 of   1) my_node_id:    0 , num_nodes:    1 , ranks/node:  1 , threads/rank: 16 --useful
+Execution starts: 2025-08-26 08:37:34

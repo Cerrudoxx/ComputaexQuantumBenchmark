@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/grover_4qubit.exe.dir/grover_4qubit.o -o bin/grover_4qubit.exe  -liqs 

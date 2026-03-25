@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/quantum_fourier_transform.exe.dir/quantum_fourier_transform.o -o bin/quantum_fourier_transform.exe  -liqs 

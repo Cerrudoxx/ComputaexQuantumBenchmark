@@ -1,0 +1,17 @@
+Ejecutando iteración con 12 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+12
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  3%] Built target gtest
+[  7%] Built target openmp_test.exe
+[ 50%] Built target iqs
+[ 54%] Built target gtest_main
+[ 63%] Built target get_started_with_noisy_IQS.exe
+[ 63%] Built target get_started_with_IQS.exe
+[ 67%] Built target basic_code_for_scaling.exe
+[ 69%] Built target specv2_bench.exe
+[ 70%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 78%] Built target mpi_env_test.exe
+[ 85%] Built target mpi_speedup_test.exe
+[ 92%] Built target intelqs_py
+[ 98%] Built target utest

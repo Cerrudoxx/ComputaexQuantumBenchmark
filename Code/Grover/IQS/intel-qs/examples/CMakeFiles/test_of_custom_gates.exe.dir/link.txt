@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test_of_custom_gates.exe.dir/test_of_custom_gates.o -o bin/test_of_custom_gates.exe  -liqs 

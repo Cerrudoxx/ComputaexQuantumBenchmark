@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/circuito.exe.dir/circuito.o -o bin/circuito.exe  -liqs 

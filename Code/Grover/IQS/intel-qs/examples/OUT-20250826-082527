@@ -1,0 +1,29 @@
+Ejecutando iteración con 3 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+3
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  7%] Built target openmp_test.exe
+[  7%] Built target gtest
+[ 50%] Built target iqs
+[ 54%] Built target gtest_main
+[ 58%] Built target specv2_bench.exe
+[ 61%] Built target basic_code_for_scaling.exe
+[ 63%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 70%] Built target mpi_env_test.exe
+[ 89%] Built target mpi_speedup_test.exe
+[ 89%] Built target get_started_with_IQS.exe
+[ 89%] Built target intelqs_py
+[ 92%] Built target get_started_with_noisy_IQS.exe
+[ 98%] Built target utest
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp: In function ‘int main(int, char**)’:
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:282:2: error: expected ‘}’ at end of input
+  282 | }
+      |  ^
+/home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/circuito.cpp:112:33: note: to match this ‘{’
+  112 | int main(int argc, char** argv) {
+      |                                 ^
+make[2]: *** [examples/CMakeFiles/circuito.exe.dir/build.make:76: examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:276: examples/CMakeFiles/circuito.exe.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+Error: Fallo en la compilación.
+Error: Fallo al ejecutar scriptcompilacion.sh.

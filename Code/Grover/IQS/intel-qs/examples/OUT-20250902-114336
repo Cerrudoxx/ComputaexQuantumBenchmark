@@ -1,0 +1,23 @@
+Ejecutando iteración con 12 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+12
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  3%] Built target openmp_test.exe
+[  7%] Built target gtest
+[ 50%] Built target iqs
+[ 61%] Built target gtest_main
+[ 61%] Built target get_started_with_IQS.exe
+[ 61%] Built target get_started_with_noisy_IQS.exe
+[ 69%] Built target specv2_bench.exe
+[ 69%] Built target basic_code_for_scaling.exe
+[ 76%] Built target mpi_env_test.exe
+[ 83%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 92%] Built target mpi_speedup_test.exe
+[ 92%] Built target intelqs_py
+[ 98%] Built target utest
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 145028.500 milisegundos
+Uso medio de RAM: 1250.718 MB
+Iteración 12 completada.
+Todas las iteraciones completadas exitosamente.

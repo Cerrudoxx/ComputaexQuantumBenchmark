@@ -1,0 +1,53 @@
+Ejecutando iteración con 12 qubits
+Se ha guardado la cadena en el archivo 'circuito2.qasm'.
+12
+Se ha guardado la cadena en el archivo 'circuito.cpp'.
+[  7%] Built target openmp_test.exe
+[  7%] Built target gtest
+[ 50%] Built target iqs
+[ 54%] Built target gtest_main
+[ 61%] Built target get_started_with_noisy_IQS.exe
+[ 61%] Built target basic_code_for_scaling.exe
+[ 65%] Built target get_started_with_IQS.exe
+[ 69%] Built target specv2_bench.exe
+[ 70%] Building CXX object examples/CMakeFiles/circuito.exe.dir/circuito.cpp.o
+[ 87%] Built target mpi_env_test.exe
+[ 87%] Built target intelqs_py
+[ 92%] Built target mpi_speedup_test.exe
+[ 98%] Built target utest
+[100%] Linking CXX executable /home/jesus-cerrudo/Escritorio/Computaex/TFG-Computaex/iqs/intel-qs/examples/bin/circuito.exe
+[100%] Built target circuito.exe
+Tiempo de compilación: 146060.101 milisegundos
+Uso medio de RAM: 1246.340 MB
+
+############################################################
+######## Launching ejemplo executable ###########
+############################################################
+
+
+-------------------
+executable =  circuito.exe
+parameter values =  12
+[|s0>:  0] world_rank:    0 , state_rank:    0 (state   0 of   1) my_node_id:    0 , num_nodes:    1 , ranks/node:  1 , threads/rank: 16 --useful
+Execution starts: 2025-09-02 11:57:28
+Duración de la iteración 1: 1112.01 ms
+Duración de la iteración 2: 1106.67 ms
+Duración de la iteración 3: 1101.59 ms
+Duración de la iteración 4: 1099.25 ms
+Duración de la iteración 5: 1103.76 ms
+Duración de la iteración 6: 1101.42 ms
+Duración de la iteración 7: 1099.6 ms
+Duración de la iteración 8: 1111.79 ms
+Duración de la iteración 9: 1096.41 ms
+Duración de la iteración 10: 1102.56 ms
+Tiempo de ejecución promedio inicial: 1103.505625000000 ms
+Desviación estándar inicial: 4.936825393744 ms
+Optimal number of iterations: 1
+Tiempo de ejecución promedio: 1103.506 ms
+Desviación estándar del tiempo: 4.937 ms
+Uso medio de RAM: 30257.565 KB
+Pico de uso de RAM: 30420 KB
+Qubits utilizados: 12
+Iteraciones óptimas: 1
+Iteración 12 completada.
+Todas las iteraciones completadas exitosamente.

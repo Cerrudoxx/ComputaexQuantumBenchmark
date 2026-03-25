@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/communication_reduction_via_qubit_reordering.exe.dir/communication_reduction_via_qubit_reordering.o -o bin/communication_reduction_via_qubit_reordering.exe  -liqs 
