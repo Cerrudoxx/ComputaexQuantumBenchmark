@@ -61,11 +61,29 @@ For the Quantum Volume benchmarks, the circuits are generated dynamically using 
 - `README.md`: This file.
 - `environment-*.yml`: Conda environment files for each of the Python-based simulators.
 
-## Contributing
-TODO
+## 🖋️ Citation
 
+If you use this benchmarking suite or the datasets provided in this repository for your research, please cite our published paper in **SIMULATION**:
+
+```bibtex
+@article{doi:10.1177/00375497261438515,
+  author = {Jesús Cerrudo-Herrera and Daniel Talaván-Vega and Paloma Rodríguez-Oliver and Ahmed Ziabat-Ziabat and Juan Antonio Rico-Gallego},
+  title ={Benchmarking quantum computing statevector simulators on high-performance computing},
+  journal = {SIMULATION},
+  volume = {0},
+  number = {0},
+  pages = {00375497261438515},
+  year = {2026},
+  doi = {10.1177/00375497261438515},
+  URL = {[https://doi.org/10.1177/00375497261438515](https://doi.org/10.1177/00375497261438515)},
+  eprint = {[https://doi.org/10.1177/00375497261438515](https://doi.org/10.1177/00375497261438515)}
+}
+```
 ## License
-TODO (check individual simulator licenses for compatibility).
+
+The benchmarking suite and utility scripts (custom Python, C++, and Bash code) are licensed under the [MIT License](LICENSE).
+
+**Third-Party Code:** This repository includes the source code for the [Intel Quantum Simulator (IQS)](https://github.com/intel/intel-qs) for benchmarking purposes. IQS is licensed under the **Apache License 2.0**. Its respective license and copyright notices are preserved within the `intel-qs` subdirectories.
 
 For issues, please open a GitHub issue. The code is optimized for the Lusitania HPC environment but is designed to be extensible to other systems.
 
