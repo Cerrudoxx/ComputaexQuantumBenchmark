@@ -1,3 +1,4 @@
+import psutil
 from qsimov import *
 import qsimov as qj
 import math
@@ -106,6 +107,8 @@ class GroverRunner:
         self.console.print(f"Comienza la ejecución: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", style="green")
 
         
+        process = psutil.Process()
+        start_ctx = process.num_ctx_switches()
         if self.cpu_monitor:
             self.cpu_monitor.start()
         
@@ -138,6 +141,8 @@ class GroverRunner:
         ram_mb = self.ram_monitor.max_memory_usage_in_mb() if self.ram_monitor else 0
         max_ram_peak = self.ram_monitor.max_memory_usage() if self.ram_monitor else 0
 
+        end_ctx = process.num_ctx_switches()
+        ctx_switches_diff = (end_ctx.voluntary - start_ctx.voluntary) + (end_ctx.involuntary - start_ctx.involuntary)
         if self.cpu_monitor:
             self.cpu_monitor.stop()
         if self.ram_monitor:
@@ -154,5 +159,6 @@ class GroverRunner:
             'ram_avg': ram_avg,
             'ram_mb': ram_mb,
             'max_ram_peak': max_ram_peak,
-            'cores': self.cores
+            'cores': self.cores,
+            'ctx_switches': ctx_switches_diff
         }

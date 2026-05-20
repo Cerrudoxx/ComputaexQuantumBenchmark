@@ -3,9 +3,9 @@ import os
 import sys
 import threading
 from rich.console import Console
-import ResourceMonitor
+from Code.utils import ResourceMonitor
 from grover_runner import GroverRunner
-from results_handler import ResultsHandler
+from Code.utils.results_handler import ResultsHandler
 import psutil
 
 def set_active_cores(cores: int) -> int:
@@ -87,6 +87,7 @@ def main():
 
     if args.ram:
         ResourceMonitor.plot_ram_avg_from_results(os.path.join(results_dir, f"{times_file_name}.csv"))
+        ResourceMonitor.plot_cpu_avg_from_results(os.path.join(results_dir, f"{times_file_name}.csv"))
 
     ResourceMonitor.plot_t_grover_from_csv(os.path.join(results_dir, f"{times_file_name}.csv"))
 

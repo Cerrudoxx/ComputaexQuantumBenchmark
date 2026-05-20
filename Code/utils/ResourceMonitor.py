@@ -10,7 +10,6 @@ from matplotlib.ticker import MaxNLocator
 import matplotlib
 import datetime
 
-
 console = Console()
 
 class CPUMonitor:
@@ -21,18 +20,14 @@ class CPUMonitor:
         readings (list): A list of CPU usage readings.
     """
     def __init__(self, interval=0.1):
-        """Initializes the CPUMonitor.
-
-        Args:
-            interval (float, optional): The interval in seconds at which to sample CPU usage.
-                Defaults to 0.1.
-        """
         self.interval = interval
         self.readings = []
         self._monitoring = False
 
     def _monitor(self):
         """Continuously monitors CPU usage and records readings."""
+        # Initial call to avoid 0.0
+        psutil.cpu_percent(interval=None)
         while self._monitoring:
             self.readings.append(psutil.cpu_percent(interval=None))
             time.sleep(self.interval)
@@ -57,6 +52,7 @@ class CPUMonitor:
         """
         return sum(self.readings) / len(self.readings) if self.readings else 0.0
 
+
 class RAMMonitor:
     """A class to monitor RAM usage in a separate thread.
 
@@ -65,12 +61,6 @@ class RAMMonitor:
         readings (list): A list of RAM usage readings.
     """
     def __init__(self, interval=0.1):
-        """Initializes the RAMMonitor.
-
-        Args:
-            interval (float, optional): The interval in seconds at which to sample RAM usage.
-                Defaults to 0.1.
-        """
         self.interval = interval
         self.readings = []
         self._monitoring = False
@@ -95,46 +85,25 @@ class RAMMonitor:
         self.thread.join()
 
     def average(self):
-        """Calculates the average RAM usage.
-
-        Returns:
-            float: The average RAM usage, or 0.0 if no readings were taken.
-        """
+        """Calculates the average RAM usage."""
         return sum(self.readings) / len(self.readings) if self.readings else 0.0
             
     def max_memory_usage(self):
-        """Calculates the maximum RAM usage.
-
-        Returns:
-            float: The maximum RAM usage, or 0.0 if no readings were taken.
-        """
+        """Calculates the maximum RAM usage percentage."""
         return max(self.readings) if self.readings else 0.0
 
     def memory_usage_in_mb(self):
-        """Gets the current RAM usage in megabytes.
-
-        Returns:
-            float: The current RAM usage in megabytes.
-        """
+        """Gets the current RAM usage in megabytes."""
         process = psutil.Process()
         memory_info = process.memory_info()
         return memory_info.rss / (1024 * 1024)
 
     def max_memory_usage_in_mb(self):
-        """Calculates the maximum RAM usage in megabytes.
-
-        Returns:
-            float: The maximum RAM usage in megabytes, or 0.0 if no readings were taken.
-        """
+        """Calculates the maximum RAM usage in megabytes."""
         return max(self.readings) * psutil.virtual_memory().total / (1024 * 1024 * 100) if self.readings else 0.0
     
-    
     def real_time_memory_usage(self, file_name):
-        """Records real-time memory usage to a CSV file.
-
-        Args:
-            file_name (str): The name of the CSV file to write to.
-        """
+        """Records real-time memory usage to a CSV file."""
         process = psutil.Process()
         if not os.path.isfile(file_name):
             with open(file_name, mode='w', newline='') as csv_file:
@@ -153,78 +122,21 @@ class RAMMonitor:
                 next_time = elapsed + self.interval
                 time.sleep(max(0, next_time - (time.perf_counter() - start_time)))
 
-def create_ram_usage_csv(file_name, time, ram_usage):
-    """Appends a timestamp and RAM usage to a CSV file.
-
-    Args:
-        file_name (str): The name of the CSV file.
-        time (str): The timestamp to record.
-        ram_usage (float): The RAM usage to record.
-    """
-    file_exists = os.path.isfile(file_name)
-    with open(file_name, mode='a', newline='') as csv_file:
-        csv_writer = csv.writer(csv_file)
-        if not file_exists:
-            csv_writer.writerow(['Time', 'RAM Usage (MB)'])
-        csv_writer.writerow([time, ram_usage])
-        
-def plot_ram_usage_from_csv(file_name):
-    """Creates a plot of RAM usage over time from a CSV file.
-
-    Args:
-        file_name (str): The name of the CSV file.
-    """
-    print(file_name)
-    times = []
-    ram_usages = []
-    
-    with open(file_name, mode='r') as csv_file:
-        csv_reader = csv.reader(csv_file)
-        next(csv_reader)
-        start_time = None
-        for row in csv_reader:
-            try:
-                current_time = time.strptime(row[0], "%H:%M:%S")
-                if start_time is None:
-                    start_time = current_time
-                elapsed_time = time.mktime(current_time) - time.mktime(start_time)
-                times.append(elapsed_time)
-                ram_usages.append(float(row[1]))
-            except ValueError as e:
-                console.print(f"Skipping row due to error: {e}", style="bold red")
-    
-    if len(times) > 1 and len(ram_usages) > 1:
-        plt.figure(figsize=(10, 5))
-        plt.plot(times, ram_usages, linestyle='-', color='b', marker='o')
-        plt.xlabel('Elapsed Time (seconds)')
-        plt.ylabel('RAM Usage (MB)')
-        plt.title('RAM Usage Over Time')
-        plt.xticks(rotation=45)
-        plt.gca().xaxis.set_major_locator(MaxNLocator(nbins=10))
-        plt.tight_layout()
-        
-        png_file_name = file_name.replace('.csv', '.png')
-        plt.savefig(png_file_name)
-        console.print(f"Graph saved as {png_file_name}", style="bold green")
-    else:
-        console.print("Not enough data to plot.", style="bold red")
-
 def plot_ram_avg_from_results(file_name):
-    """Creates a plot of average RAM usage vs. number of qubits from a CSV file.
-
-    Args:
-        file_name (str): The name of the CSV file.
-    """
+    """Creates a plot of average RAM usage vs. number of qubits from a CSV file."""
     try:
         qubits = []
         ram_mb = []
         
         with open(file_name, mode='r') as csv_file:
             csv_reader = csv.reader(csv_file)
-            next(csv_reader)
+            headers = next(csv_reader)
+            ram_mb_idx = headers.index('ram_mb') if 'ram_mb' in headers else 6
+            n_idx = headers.index('n') if 'n' in headers else 0
+
             for row in csv_reader:
-                qubits.append(int(row[0]))
-                ram_mb.append(float(row[6]))
+                qubits.append(int(row[n_idx]))
+                ram_mb.append(float(row[ram_mb_idx]))
         
         if qubits and ram_mb:
             plt.figure(figsize=(10, 5))
@@ -239,40 +151,72 @@ def plot_ram_avg_from_results(file_name):
             plt.savefig(png_file_name)
             console.print(f"Graph saved as {png_file_name}", style="bold green")
         else:
-            console.print("No data available to plot.", style="bold red")
+            console.print("No data available to plot RAM vs Qubits.", style="bold red")
     except Exception as e:
-        console.print(f"Error while processing the file: {e}", style="bold red")
+        console.print(f"Error while processing RAM plot file: {e}", style="bold red")
+
+def plot_cpu_avg_from_results(file_name):
+    """Creates a plot of average CPU usage vs. number of qubits from a CSV file."""
+    try:
+        qubits = []
+        cpu_avg = []
+        
+        with open(file_name, mode='r') as csv_file:
+            csv_reader = csv.reader(csv_file)
+            headers = next(csv_reader)
+            cpu_avg_idx = headers.index('cpu_avg') if 'cpu_avg' in headers else 4
+            n_idx = headers.index('n') if 'n' in headers else 0
+
+            for row in csv_reader:
+                qubits.append(int(row[n_idx]))
+                cpu_avg.append(float(row[cpu_avg_idx]))
+        
+        if qubits and cpu_avg:
+            plt.figure(figsize=(10, 5))
+            plt.plot(qubits, cpu_avg, linestyle='-', color='orange', marker='o')
+            plt.xlabel('Number of Qubits')
+            plt.ylabel('CPU Average Usage (%)')
+            plt.title('CPU Average Usage vs Number of Qubits')
+            plt.grid(True)
+            plt.tight_layout()
+            
+            png_file_name = file_name.replace('.csv', '_cpu_avg_qubits.png')
+            plt.savefig(png_file_name)
+            console.print(f"Graph saved as {png_file_name}", style="bold green")
+        else:
+            console.print("No data available to plot CPU vs Qubits.", style="bold red")
+    except Exception as e:
+        console.print(f"Error while processing CPU plot file: {e}", style="bold red")
         
 def plot_t_grover_from_csv(file_name):
-    """Creates a plot of execution time vs. number of qubits from a CSV file.
-
-    Args:
-        file_name (str): The name of the CSV file.
-    """
+    """Creates a plot of execution time vs. number of qubits from a CSV file."""
     try:
         n_values = []
         t_grover_values = []
         
         with open(file_name, mode='r') as csv_file:
             csv_reader = csv.reader(csv_file)
-            next(csv_reader)
+            headers = next(csv_reader)
+            time_idx = headers.index('t_grover') if 't_grover' in headers else 2
+            n_idx = headers.index('n') if 'n' in headers else 0
+
             for row in csv_reader:
-                n_values.append(int(row[0]))
-                t_grover_values.append(float(row[2]))
+                n_values.append(int(row[n_idx]))
+                t_grover_values.append(float(row[time_idx]))
         
         if n_values and t_grover_values:
             plt.figure(figsize=(10, 5))
             plt.plot(n_values, t_grover_values, linestyle='-', color='r', marker='o')
             plt.xlabel('Number of Qubits')
-            plt.ylabel('Grover Time (s)')
-            plt.title('Grover Time vs Number of Qubits')
+            plt.ylabel('Execution Time (s)')
+            plt.title('Execution Time vs Number of Qubits')
             plt.grid(True)
             plt.tight_layout()
             
-            png_file_name = file_name.replace('.csv', '_t_grover_qubits.png')
+            png_file_name = file_name.replace('.csv', '_time_qubits.png')
             plt.savefig(png_file_name)
             console.print(f"Graph saved as {png_file_name}", style="bold green")
         else:
-            console.print("No data available to plot.", style="bold red")
+            console.print("No data available to plot Execution Time vs Qubits.", style="bold red")
     except Exception as e:
-        console.print(f"Error while processing the file: {e}", style="bold red")       
+        console.print(f"Error while processing Time plot file: {e}", style="bold red")       
