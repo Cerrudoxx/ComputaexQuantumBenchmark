@@ -11,7 +11,7 @@ The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qi
   - **Quantum Fourier Transform (QFT)**: The quantum analogue of the Discrete Fourier Transform, a fundamental building block in many quantum algorithms, including Shor's algorithm for factoring. The QFT circuit has a relatively low depth and entanglement.
   - **Quantum Volume (QV)**: A metric that measures the largest square circuit a quantum computer can successfully implement. The benchmark generates random square circuits (where the depth equals the number of qubits) to provide a comprehensive test of a simulator's performance.
 
-- **Performance Measurement**: The framework uses Python's `time` module for precise execution time measurements and `psutil` for monitoring CPU and RAM usage. The benchmarks are designed to incrementally increase the number of qubits from 3 to 30, with automatic termination if predefined time or memory limits are exceeded.
+- **Performance Measurement**: The framework uses Python's `time` module for precise execution time measurements and `psutil` for monitoring CPU, RAM usage, and OS context switches. The benchmarks are designed to incrementally increase the number of qubits from 3 to 30, with automatic termination if predefined time or memory limits are exceeded. New plots for CPU and RAM average consumption vs Qubits are generated automatically.
 
 - **Supported Simulators**:
   - **[Qiskit](https://qiskit.org/)**: An open-source SDK for quantum computing developed by IBM.
@@ -29,26 +29,34 @@ The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qi
    cd ComputaexQuantumBenchmark
    ```
 
-2. Set up the Conda environments for the Python-based simulators. Each simulator has its own Conda environment to manage its dependencies. The environment files are located in the root of the repository.
+2. Set up the Conda environments for the Python-based simulators using the new CLI tool `qbench.py`:
    ```bash
-   conda env create -f environment-qiskit.yml
-   conda env create -f environment-cirq.yml
-   conda env create -f environment-pennylane.yml
-   conda env create -f environment-qibo.yml
-   conda env create -f environment-qsimov.yml
-   conda env create -f environment-qulacs.yml
+   python3 qbench.py env install qiskit
+   python3 qbench.py env install cirq
+   python3 qbench.py env install pennylane
+   python3 qbench.py env install qibo
+   python3 qbench.py env install qsimov
+   python3 qbench.py env install qulacs
    ```
 
 3. For the Intel Quantum Simulator (IQS), you will need to compile the C++ source code. The source code and build instructions are located in the `Code/<Algorithm>/IQS/intel-qs` directories.
 
 ## Usage
-To run a benchmark, navigate to the directory of the desired algorithm and simulator and execute the main script. For example, to run the Grover's algorithm benchmark with Qiskit, you would run the following command:
+The repository now includes a unified Command Line Interface (`qbench.py`) that simplifies running the benchmarks and manages Conda environments automatically.
+
+To run a benchmark, use the following syntax:
 
 ```bash
-python Code/Grover/Qiskit/grover_qiskit_main.py 3-10 1024
+python3 qbench.py run <algorithm> <simulator> --qubits <q> --iterations <i>
 ```
 
-The first argument specifies the range of qubits to test (e.g., `3-10`), and the second argument specifies the number of iterations. The script will output the performance data to a CSV file in the `Results/` directory and generate plots of the results using Matplotlib.
+For example, to run the Grover's algorithm benchmark with Qiskit for 3 to 10 qubits with 1024 iterations:
+
+```bash
+python3 qbench.py run grover qiskit --qubits 3-10 --iterations 1024
+```
+
+The CLI handles activating the corresponding Conda environment automatically. The script will output the performance data (Time, CPU Avg, RAM Avg, Peak RAM, and Context Switches) to a CSV file in the `Results/` directory and generate plots of the results using Matplotlib.
 
 For the Quantum Volume benchmarks, the circuits are generated dynamically using a Qiskit-based script (`qiskitCircuitGenerator.py`) and then translated to the target simulator's format.
 
