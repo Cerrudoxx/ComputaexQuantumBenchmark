@@ -26,8 +26,7 @@ def install_env(simulator):
         print(f"Failed to install environment: {e}")
         sys.exit(1)
 
-def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cpu):
-    """Runs the benchmark in the specific conda environment."""
+def _run_single_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cpu):
     # Map simulator to its environment name
     env_name = simulator.lower()
     if simulator.lower() == 'qiskit':
@@ -55,7 +54,7 @@ def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cp
     algo_dir = algo_dir_map.get(algorithm.lower())
     if not algo_dir:
         print(f"Error: Unknown algorithm '{algorithm}'. Must be one of {list(algo_dir_map.keys())}")
-        sys.exit(1)
+        return
 
     # Capitalize simulator for directory
     sim_dir = simulator.capitalize()
@@ -65,8 +64,8 @@ def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cp
         
     script_path = os.path.join("Code", algo_dir, sim_dir)
     if not os.path.exists(script_path):
-        print(f"Error: Path {script_path} does not exist.")
-        sys.exit(1)
+        print(f"Skipping {algorithm} {simulator}: Path {script_path} does not exist.")
+        return
 
     # Find the main file
     main_file = None
@@ -76,10 +75,12 @@ def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cp
             break
             
     if not main_file:
-        print(f"Error: Could not find a main script in {script_path}")
-        sys.exit(1)
+        print(f"Skipping {algorithm} {simulator}: Could not find a main script in {script_path}")
+        return
 
-    print(f"Running {main_file} in environment {env_name}...")
+    print(f"\n========================================================")
+    print(f"Running {algorithm} on {simulator} ({main_file})...")
+    print(f"========================================================\n")
     
     # Construct the python command
     cmd = [
@@ -101,8 +102,16 @@ def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cp
     try:
         subprocess.run(cmd, check=True, env=env)
     except subprocess.CalledProcessError as e:
-        print(f"Benchmark execution failed: {e}")
-        sys.exit(1)
+        print(f"Benchmark execution failed for {algorithm} on {simulator}: {e}")
+
+def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cpu):
+    """Runs the benchmark in the specific conda environment."""
+    algorithms = ['grover', 'qft', 'quantumvolume'] if algorithm.lower() == 'all' else [algorithm]
+    simulators = ['qiskit', 'cirq', 'pennylane', 'qibo', 'qsimov', 'qulacs', 'iqs'] if simulator.lower() == 'all' else [simulator]
+
+    for algo in algorithms:
+        for sim in simulators:
+            _run_single_benchmark(algo, sim, qubits, iterations, cores, no_ram, no_cpu)
 
 def main():
     parser = argparse.ArgumentParser(description="HPC-QuBench Command Line Interface")
@@ -117,8 +126,8 @@ def main():
 
     # Run command
     parser_run = subparsers.add_parser("run", help="Run a benchmark")
-    parser_run.add_argument("algorithm", type=str, help="Algorithm to benchmark (grover, qft, quantumvolume)")
-    parser_run.add_argument("simulator", type=str, help="Simulator to use (qiskit, cirq, pennylane, etc.)")
+    parser_run.add_argument("algorithm", type=str, help="Algorithm to benchmark (grover, qft, quantumvolume, or 'all')")
+    parser_run.add_argument("simulator", type=str, help="Simulator to use (qiskit, cirq, pennylane, etc., or 'all')")
     parser_run.add_argument("--qubits", type=str, required=True, help="Number of qubits or range (e.g., '4' or '4-7')")
     parser_run.add_argument("--iterations", type=str, required=True, help="Number of iterations or range (e.g., '512' or '512-1024')")
     parser_run.add_argument("--cores", type=int, help="Number of CPU cores to use")
