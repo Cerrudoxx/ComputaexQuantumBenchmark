@@ -29,19 +29,19 @@ def install_env(simulator):
 def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cpu):
     """Runs the benchmark in the specific conda environment."""
     # Map simulator to its environment name
-    env_name = f"{simulator.lower()}_env"  # Based on the typical name, adjust if necessary
+    env_name = simulator.lower()
     if simulator.lower() == 'qiskit':
-        env_name = 'qiskit_env'
+        env_name = 'qiskit'
     elif simulator.lower() == 'cirq':
-        env_name = 'cirq_env'
+        env_name = 'cirq'
     elif simulator.lower() == 'pennylane':
-        env_name = 'pennylane_env'
+        env_name = 'pennylane'
     elif simulator.lower() == 'qibo':
-        env_name = 'qibo_env'
+        env_name = 'qibo'
     elif simulator.lower() == 'qsimov':
-        env_name = 'qsimov_env'
+        env_name = 'qsimov'
     elif simulator.lower() == 'qulacs':
-        env_name = 'qulacs_env'
+        env_name = 'qulacs'
     else:
         print(f"Warning: Unknown simulator '{simulator}'. Trying environment '{env_name}'.")
 
