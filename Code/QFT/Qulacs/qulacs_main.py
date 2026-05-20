@@ -96,7 +96,7 @@ def main():
         ResourceMonitor.plot_cpu_avg_from_results(os.path.join(results_dir, f"{times_file_name}.csv"))
 
     ResourceMonitor.plot_combined_dashboard(os.path.join(results_dir, f"{times_file_name}.csv"))
-    ResourceMonitor.plot_t_grover_from_csv(os.path.join(results_dir, f"{times_file_name}.csv"))
+    ResourceMonitor.plot_time_from_csv(os.path.join(results_dir, f"{times_file_name}.csv"))
 
     results_handler.save_console_output()
 

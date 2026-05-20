@@ -279,7 +279,7 @@ def plot_cpu_avg_from_results(file_name: str):
         console.print(f"  ⚠ CPU plot error: {e}", style="bold red")
 
 
-def plot_t_grover_from_csv(file_name: str):
+def plot_time_from_csv(file_name: str):
     """Execution Time (s) vs Qubits — dark-themed with error bars when std is available."""
     _apply_style()
     try:

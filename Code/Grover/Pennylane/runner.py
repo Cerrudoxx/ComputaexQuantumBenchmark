@@ -61,14 +61,14 @@ class Runner:
                 
             for _ in range(optimal_num_iterations):
                 qml.Hadamard(wires=self.n - 1)
-                qml.MultiControlledX(wires=range(self.n), control_values='1'*(self.n-1))
+                qml.MultiControlledX(wires=range(self.n), control_values=[1]*(self.n-1))
                 qml.Hadamard(wires=self.n - 1)
                 
                 for qubit in range(self.n):
                     qml.Hadamard(wires=qubit)
                     qml.X(wires=qubit)
                 qml.Hadamard(wires=self.n - 1)
-                qml.MultiControlledX(wires=range(self.n), control_values='1'*(self.n-1))
+                qml.MultiControlledX(wires=range(self.n), control_values=[1]*(self.n-1))
                 qml.Hadamard(wires=self.n - 1)
                 for qubit in range(self.n):
                     qml.X(wires=qubit)
