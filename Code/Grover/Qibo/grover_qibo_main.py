@@ -4,7 +4,7 @@ import sys
 import threading
 from rich.console import Console
 from Code.utils import ResourceMonitor
-from grover_runner import GroverRunner
+from .grover_runner import GroverRunner
 from Code.utils.results_handler import ResultsHandler
 import psutil
 import rich
