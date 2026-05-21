@@ -3,9 +3,10 @@ import os
 import sys
 import threading
 from rich.console import Console
-import ResourceMonitor
-from runner import Runner
-from results_handler import ResultsHandler
+from rich.status import Status
+from Code.utils import ResourceMonitor
+from .runner import Runner
+from Code.utils.results_handler import ResultsHandler
 
 def main():
     """The main function for running the QFT algorithm with Qiskit."""
@@ -59,28 +60,33 @@ def main():
     actual_cores = os.cpu_count()
     args.cores = min(args.cores, actual_cores)
     console = Console(record=True)
-    console.print(f"Using {args.cores} cores", style="bold green")
 
     times_file_name = f'QFT_data_qiskit_{args.n}'
     results_handler = ResultsHandler(times_file_name, results_dir, console)
 
     for n in qubits_list:
         for num_iterations in iterations_list:
-            console.print(f"Running QFT algorithm with {n} qubits, {num_iterations} iterations, and {args.cores} cores...", style="bright_magenta")
+            results_handler.display_header("QFT", "Qiskit", n, num_iterations, args.cores)
             cpu_monitor = ResourceMonitor.CPUMonitor(interval=0.1) if args.cpu else None
-            ram_monitor = ResourceMonitor.RAMMonitor(interval=0.1) if args.ram else None 
-            
+            ram_monitor = ResourceMonitor.RAMMonitor(interval=0.1) if args.ram else None
             ram_csv_file = os.path.join(results_dir, f"ram_usage_n{n}.csv")
             grover_runner = Runner(n, num_iterations, args.cores, ram_monitor, cpu_monitor, console, ram_csv_file)
+
+            with Status("[bold bright_cyan]⚛  Initializing quantum circuit...[/]", console=console, spinner="dots"):
+                import time as _t; _t.sleep(0.5)
+
             results = grover_runner.run()
-            
+
             results_handler.display_timing_table(results)
             results_handler.display_usage_table(results)
+            results_handler.display_run_summary(results)
             results_handler.save_to_csv(results)
     if args.ram:
         ResourceMonitor.plot_ram_avg_from_results(os.path.join(results_dir, f"{times_file_name}.csv"))
+        ResourceMonitor.plot_cpu_avg_from_results(os.path.join(results_dir, f"{times_file_name}.csv"))
 
-    ResourceMonitor.plot_t_grover_from_csv(os.path.join(results_dir, f"{times_file_name}.csv"))
+    ResourceMonitor.plot_combined_dashboard(os.path.join(results_dir, f"{times_file_name}.csv"))
+    ResourceMonitor.plot_time_from_csv(os.path.join(results_dir, f"{times_file_name}.csv"))
     
     results_handler.save_console_output()
 if __name__ == "__main__":
