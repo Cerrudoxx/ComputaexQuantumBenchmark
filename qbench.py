@@ -2,14 +2,33 @@ import argparse
 import subprocess
 import sys
 import os
+import shutil
+
+def _find_conda():
+    """Find the conda executable, checking PATH and common locations."""
+    conda = shutil.which("conda")
+    if conda:
+        return conda
+    home = os.path.expanduser("~")
+    for candidate in [
+        os.path.join(home, "anaconda3", "condabin", "conda"),
+        os.path.join(home, "miniconda3", "condabin", "conda"),
+        os.path.join(home, "anaconda3", "bin", "conda"),
+        os.path.join(home, "miniconda3", "bin", "conda"),
+    ]:
+        if os.path.isfile(candidate):
+            return candidate
+    return None
+
+CONDA = _find_conda()
 
 def check_conda():
     """Check if conda is available."""
-    try:
-        subprocess.run(["conda", "--version"], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
+    if CONDA is None:
         print("Error: conda is not installed or not in PATH.")
+        print("Looked in PATH and common locations (~/{anaconda3,miniconda3}/{condabin,bin}/conda).")
         sys.exit(1)
+
 
 def install_env(simulator):
     """Installs the conda environment for a specific simulator."""
@@ -20,13 +39,17 @@ def install_env(simulator):
     
     print(f"Installing environment for {simulator} from {env_file}...")
     try:
-        subprocess.run(["conda", "env", "create", "-f", env_file], check=True)
+        subprocess.run([CONDA, "env", "create", "-f", env_file], check=True)
         print(f"Successfully installed environment for {simulator}.")
     except subprocess.CalledProcessError as e:
         print(f"Failed to install environment: {e}")
         sys.exit(1)
 
 def _run_single_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cpu):
+    if simulator.lower() == 'iqs':
+        print(f"\n[INFO] Skipping {algorithm} on IQS. Intel-QS is a C++ simulator with a custom workflow and is not fully integrated into the Python CLI yet.")
+        return
+
     # Map simulator to its environment name
     env_name = simulator.lower()
     if simulator.lower() == 'qiskit':
@@ -84,7 +107,7 @@ def _run_single_benchmark(algorithm, simulator, qubits, iterations, cores, no_ra
     
     # Construct the python command
     cmd = [
-        "conda", "run", "-n", env_name, "--no-capture-output", 
+        CONDA, "run", "-n", env_name, "--no-capture-output", 
         "python", "-m", main_file.replace(os.path.sep, '.').replace('.py', ''),
         str(qubits), str(iterations)
     ]

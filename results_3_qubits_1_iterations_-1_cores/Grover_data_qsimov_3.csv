@@ -1,0 +1,2 @@
+n,iterations_number,t_grover,std_grover,cpu_avg,cpu_min,cpu_max,cpu_p95,cpu_median,cpu_stdev,ram_avg_pct,ram_peak_mb,ram_avg_mb,ram_min_mb,ram_stdev_mb,ram_p95_mb,ram_median_mb,ctx_switches_vol,ctx_switches_invol,ctx_switches_total,cores,cpu_samples,ram_samples
+3,13456,0.0962758805483799,0.10215043651281307,99.96181642342184,0.0,100.0,100.0,100.0,0.973320659308994,0.7524329490644349,133.38671875,115.04719735212225,95.06640625,10.281051961099532,131.4140625,114.74609375,20827,363092,383919,16,11374,11403
