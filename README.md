@@ -60,6 +60,16 @@ The CLI handles activating the corresponding Conda environment automatically. Th
 
 For the Quantum Volume benchmarks, the circuits are generated dynamically using a Qiskit-based script (`qiskitCircuitGenerator.py`) and then translated to the target simulator's format.
 
+### Intel Quantum Simulator (IQS) Specifics
+Unlike the Python-based simulators, IQS relies on a customized C++ compilation workflow for its benchmarks. The repository contains a complete clone of IQS inside the `Code/<Algorithm>/IQS/intel-qs/` folders.
+
+The IQS execution process involves:
+1. **Circuit Generation**: A Python script (e.g., `generadorCircuitoGrover.py`) uses Qiskit to create the desired circuit and exports it to QASM format.
+2. **Translation**: A custom Python translator (`funciones_traductor.py`) parses the QASM file and generates equivalent C++ code for IQS (`circuito.cpp`).
+3. **Compilation**: A bash script (`scriptcompilacion.sh`) executes `make` to compile the generated C++ code into an executable.
+4. **Execution**: The compiled binary (`circuito.exe`) is then run to perform the simulation.
+
+Currently, this C++ workflow is **not** integrated into the `qbench.py` Python CLI tool. To benchmark IQS, you must navigate to the respective `intel-qs/examples/` directory and execute the customized bash scripts (e.g., `ejecucionGrover.sh`) manually.
 ## Repository Structure
 - `Code/`: Contains the source code for the benchmark implementations, organized by algorithm and then by simulator.
   - `Grover/`: Implementations of Grover's Algorithm.
