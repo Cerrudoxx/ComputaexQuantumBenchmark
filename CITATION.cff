@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the following article."
+title: "Benchmarking quantum computing statevector simulators on high-performance computing"
+authors:
+  - family-names: "Cerrudo-Herrera"
+    given-names: "Jesús"
+  - family-names: "Talaván-Vega"
+    given-names: "Daniel"
+  - family-names: "Rodríguez-Oliver"
+    given-names: "Paloma"
+  - family-names: "Ziabat-Ziabat"
+    given-names: "Ahmed"
+  - family-names: "Rico-Gallego"
+    given-names: "Juan Antonio"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Cerrudo-Herrera"
+      given-names: "Jesús"
+    - family-names: "Talaván-Vega"
+      given-names: "Daniel"
+    - family-names: "Rodríguez-Oliver"
+      given-names: "Paloma"
+    - family-names: "Ziabat-Ziabat"
+      given-names: "Ahmed"
+    - family-names: "Rico-Gallego"
+      given-names: "Juan Antonio"
+  title: "Benchmarking quantum computing statevector simulators on high-performance computing"
+  journal: "SIMULATION"
+  volume: 0
+  issue: 0
+  year: 2026
+  doi: "10.1177/00375497261438515"
+  url: "https://doi.org/10.1177/00375497261438515"
