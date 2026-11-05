@@ -64,6 +64,8 @@ def _run_single_benchmark(algorithm, simulator, qubits, iterations, cores, no_ra
         env_name = 'qsimov'
     elif simulator.lower() == 'qulacs':
         env_name = 'qulacs'
+    elif simulator.lower() == 'prismq':
+        env_name = 'prismq'
     else:
         print(f"Warning: Unknown simulator '{simulator}'. Trying environment '{env_name}'.")
 
@@ -84,6 +86,8 @@ def _run_single_benchmark(algorithm, simulator, qubits, iterations, cores, no_ra
     
     if sim_dir == 'Iqs':
         sim_dir = 'IQS' # IQS is usually uppercase
+    elif sim_dir == 'Prismq':
+        sim_dir = 'PrismQ'
         
     script_path = os.path.join("Code", algo_dir, sim_dir)
     if not os.path.exists(script_path):
@@ -130,7 +134,7 @@ def _run_single_benchmark(algorithm, simulator, qubits, iterations, cores, no_ra
 def run_benchmark(algorithm, simulator, qubits, iterations, cores, no_ram, no_cpu):
     """Runs the benchmark in the specific conda environment."""
     algorithms = ['grover', 'qft', 'quantumvolume'] if algorithm.lower() == 'all' else [algorithm]
-    simulators = ['qiskit', 'cirq', 'pennylane', 'qibo', 'qsimov', 'qulacs', 'iqs'] if simulator.lower() == 'all' else [simulator]
+    simulators = ['qiskit', 'cirq', 'pennylane', 'qibo', 'qsimov', 'qulacs', 'prismq', 'iqs'] if simulator.lower() == 'all' else [simulator]
 
     for algo in algorithms:
         for sim in simulators:

@@ -3,7 +3,7 @@
 ## Project Overview
 This repository provides a comprehensive framework for benchmarking quantum simulators using a suite of standard quantum algorithms. It is designed to evaluate and compare the performance of various quantum simulators on the Lusitania supercomputer, focusing on metrics such as execution time, CPU usage, and RAM consumption. The benchmarks are implemented for Grover's Algorithm, the Quantum Fourier Transform (QFT), and Quantum Volume (QV), covering a range of circuit complexities and entanglement patterns.
 
-The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qibo, Qsimov, Cirq, PennyLane, and the Intel Quantum Simulator (IQS). Each simulator is tested across a range of 3 to 30 qubits, with built-in constraints to ensure fair and efficient resource utilization on shared high-performance computing (HPC) systems.
+The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qibo, Qsimov, Cirq, PennyLane, PRISM-Q, and the Intel Quantum Simulator (IQS). Each simulator is tested across a range of 3 to 30 qubits, with built-in constraints to ensure fair and efficient resource utilization on shared high-performance computing (HPC) systems.
 
 ## Features
 - **Benchmark Algorithms**:
@@ -20,6 +20,7 @@ The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qi
   - **[Qsimov](https://github.com/Mowstyl/QSimov)**: A flexible and adaptable quantum circuit simulator developed at UCLM, with a focus on parallelism.
   - **[Cirq](https://quantumai.google/cirq)**: A Python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.
   - **[PennyLane](https://pennylane.ai/)**: A cross-platform Python library for differentiable programming of quantum computers.
+  - **[PRISM-Q](https://github.com/AbeCoull/prism-q)**: A quantum circuit simulator with a Rust core and SIMD statevector kernels. It can choose among several backends per circuit; these benchmarks pin its statevector backend.
   - **[Intel Quantum Simulator (IQS)](https://github.com/intel/intel-qs)**: A high-performance C++ simulator optimized for multi-core and multi-node architectures.
 
 ## Installation
@@ -37,6 +38,7 @@ The framework supports multiple quantum simulators, including Qiskit, Qulacs, Qi
    python3 qbench.py env install qibo
    python3 qbench.py env install qsimov
    python3 qbench.py env install qulacs
+   python3 qbench.py env install prismq
    ```
 
 3. For the Intel Quantum Simulator (IQS), you will need to compile the C++ source code. The source code and build instructions are located in the `Code/<Algorithm>/IQS/intel-qs` directories.
