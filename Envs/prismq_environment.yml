@@ -1,0 +1,13 @@
+name: prismq
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - prism-q==0.37.0
+      - qiskit==2.0.0
+      - numpy==2.2.6
+      - psutil==6.1.1
+      - rich==13.9.4
+      - matplotlib==3.10.0
